@@ -7,7 +7,7 @@
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo">
-        <img class="main-header__logo--image" src="#" width="185" height="96" alt="Седона">
+        <img class="main-header__logo-image" src="#" width="185" height="96" alt="Седона">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -16,7 +16,7 @@
           </span>
         </button>
         <div class="main-nav__container">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list">
             <li class="main-nav__item">
               <a>
                 Главная
@@ -28,7 +28,7 @@
               </a>
             </li>
           </ul>
-          <ul class="main-nav__list user-list">
+          <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current">
               <button class="main-nav__button button" type="button">Форма отзыва</button>
             </li>
@@ -62,19 +62,19 @@
               <li class="user__item">
                 <label>
                   <span class="user__text">Имя*:</span>
-                  <input class="" type="text" name="user-name" value="Пётр" required>
+                  <input class="user__input" type="text" name="user-name" value="Пётр" required>
                 </label>
               </li>
               <li class="user__item">
                 <label>
                   <span class="user__text">Фамилия*:</span>
-                  <input class="" type="text" name="user-surname" value="Пустота" required>
+                  <input class="user__input" type="text" name="user-surname" value="Пустота" required>
                 </label>
               </li>
               <li class="user__item">
                 <label>
                   <span class="user__text">Отчество:</span>
-                  <input class="" type="text" name="user-patronymic" value="Викторович" required>
+                  <input class="user__input" type="text" name="user-patronymic" value="Викторович" required>
                 </label>
               </li>
             </ul>
@@ -85,13 +85,13 @@
               <li class="user-contacts__item">
                 <label>
                   <span class="user-contacts__text">Контактный телефон*:</span>
-                  <input class="user-phone" type="tel" name="user-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Введите телефон" required>
+                  <input class="user-contacts__input" type="tel" name="user-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Введите телефон" required>
                 </label>
               </li>
               <li class="user-contacts__item">
                 <label>
                   <span class="user-contacts__text">Электронная почта*:</span>
-                  <input class="user-mail" type="email" name="user-mail" placeholder="Введите e-mail" required>
+                  <input class="user-contacts__input" type="email" name="user-mail" placeholder="Введите e-mail" required>
                 </label>
               </li>
             </ul>
@@ -102,19 +102,19 @@
               <li class="user-impressions__item">
                 <label>
                   <span class="user-impressions__text">Скорее положительное</span>
-                  <input class="user-impressions__input" type="radio" name="positive" value="positive" checked>
+                  <input type="radio" name="positive" value="positive" checked>
                 </label>
               </li>
               <li class="user-impressions__item">
                 <label>
                   <span class="user-impressions__text">Скорее отрицательное</span>
-                  <input class="user-impressions__input" type="radio" name="negative" value="negative">
+                  <input type="radio" name="negative" value="negative">
                 </label>
               </li>
               <li class="user-impressions__item">
                 <label>
                   <span class="user-impressions__text">Затрудняюсь ответить</span>
-                  <input class="user-impressions__input" type="radio" name="difficult" value="difficult">
+                  <input type="radio" name="difficult" value="difficult">
                 </label>
               </li>
             </ul>
@@ -126,25 +126,25 @@
                 <label>
                   <span class="visited-places__text">Мост Дьявола
                   </span>
-                  <input class="visited-places__input" type="checkbox" name="devil's bridge" value="devil's bridge" checked>
+                  <input type="checkbox" name="devil's bridge" value="devil's bridge" checked>
                 </label>
               </li>
               <li class="visited-places__list">
                 <label>
                   <span class="visited-places__text">Гора-Колокол</span>
-                  <input class="visited-places__input" type="checkbox" name="bell mountain" value="bell mountain" checked>
+                  <input type="checkbox" name="bell mountain" value="bell mountain" checked>
                 </label>
               </li>
               <li class="visited-places__list">
                 <label>
                   <span class="visited-places__text">Слайд-парк</span>
-                  <input class="visited-places__input" type="checkbox" name="slide park" value="slide park" checked>
+                  <input type="checkbox" name="slide park" value="slide park" checked>
                 </label>
               </li>
               <li class="visited-places__list">
                 <label>
                   <span class="visited-places__text">Красные скалы</span>
-                  <input class="visited-places__input" type="checkbox" name="red rocks" value="red rocks">
+                  <input type="checkbox" name="red rocks" value="red rocks">
                 </label>
               </li>
             </ul>
@@ -160,7 +160,7 @@
     <footer class="main-footer">
       <div class="main-footer__container">
         <b class="main-footer__title">#VISITSEDONA</b>
-        <ul class="social__list">
+        <ul class="social">
           <li class="social__item">
             <a class="social__link social__link--vkontakte">
               <span class="visually-hidden">Мы в вконтакте</span>
@@ -177,7 +177,7 @@
             </a>
           </li>
         </ul>
-        <div class="main-footer__copyright copyright">
+        <div class="copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <img class="copyright__logo" src="#" width="27" height="34" alt="Логотип HTML ACADEMY">
@@ -185,18 +185,18 @@
         </div>
       </div>
     </footer>
-    <div class="modal-container modal-container-close">
+    <div class="modal modal-close">
       <section class="modal__content">
         <h2 class="modal__title">Ваш отзыв отправлен!</h2>
         <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
         <button class="modal__button button">Закрыть окно</button>
       </section>
     </div>
-    <div class="modal-container modal-container--error modal-container--error-close">
-      <section class="modal__content modal__content--error">
-        <h2 class="modal__title modal__title--error">Что-то пошло не так!</h2>
-        <p class="modal__text modal__text--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
-        <button class="modal__button modal__button--error button">ОК</button>
+    <div class="modal-error modal-error-close">
+      <section class="modal-error__content">
+        <h2 class="modal-error__title">Что-то пошло не так!</h2>
+        <p class="modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
+        <button class="modal-error__button button">ОК</button>
       </section>
     </div>
   </body>

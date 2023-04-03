@@ -7,7 +7,7 @@
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo">
-        <img class="main-header__logo--image" src="#" width="185" height="96" alt="Седона">
+        <img class="main-header__logo-image" src="#" width="185" height="96" alt="Седона">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -16,7 +16,7 @@
           </span>
         </button>
         <div class="main-nav__container">
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list">
             <li class="main-nav__item">
               <a>
                 Главная
@@ -28,7 +28,7 @@
               </a>
             </li>
           </ul>
-          <ul class="main-nav__list user-list">
+          <ul class="main-nav__list">
             <li class="main-nav__item">
               <button class="main-nav__button button" type="button">Форма отзыва</button>
             </li>
@@ -60,48 +60,28 @@
           <h3 class="visually-hidden">Каталог фотографий</h3>
           <ul class="photo-catalog__list">
             <li class="photo-catalog__item">
-              <figure class="non-native-spaces">
-                <img src="#" width="280" height="280" alt="Изображение пустой дороги на закате">
-                <figcaption class="photo-catalog__figcaption">Неродные просторы</figcaption>
-              </figure>
-              <span class="photo-author">Автор фото: Борис</span>
-                <button class="photo-catalog__button class">
-                  <span class="visually-hidden"> Палец вверх</span>
-                </button>
-                <span class="class-result">1350</span>
+              <img class="photo-catalog__image" src="#" width="280" height="280" alt="Изображение пустой дороги на закате">
+              <span class="photo-catalog__description">Неродные просторы</span>
+              <span class="photo-catalog__author">Автор фото: Борис</span>
+              <span class="photo-catalog__result">1350</span>
             </li>
             <li class="photo-catalog__item">
-              <figure class="local-vegetation">
-                <img src="#" width="280" height="280" alt="Какус, цветущий жёлтыми цветами">
-                <figcaption class="photo-catalog__figcaption">Местная растительность</figcaption>
-              </figure>
-              <span class="photo-author">Автор фото: Сергей</span>
-                <button class="photo-catalog__button class">
-                  <span class="visually-hidden">Палец вверх</span>
-                </button>
-                <span class="class-result">143</span>
+              <img class="photo-catalog__image" src="#" width="280" height="280" alt="Какус, цветущий жёлтыми цветами">
+              <span class="photo-catalog__description">Местная растительность</span>
+              <span class="photo-catalog__author">Автор фото: Сергей</span>
+              <span class="photo-catalog__result">143</span>
             </li>
             <li class="photo-catalog__item">
-              <figure class="the-road-to-the-north">
-                <img src="#" width="280" height="280" alt="Догога, уходящая вверх, окруженная зеленым лесом">
-                <figcaption class="photo-catalog__figcaption">Дорога на север</figcaption>
-              </figure>
-              <span class="photo-author">Автор фото: Петр</span>
-                <button class="photo-catalog__button class">
-                  <span class="visually-hidden">Палец вверх</span>
-                </button>
-                <span class="class-result">96</span>
+              <img class="photo-catalog__image" src="#" width="280" height="280" alt="Догога, уходящая вверх, окруженная зеленым лесом">
+              <span class="photo-catalog__description">Дорога на север</span>
+              <span class="photo-catalog__author">Автор фото: Петр</span>
+              <span class="photo-catalog__result">96</span>
             </li>
             <li class="photo-catalog__item">
-              <figure class="devil's-bridge">
-                <img src="#" width="280" height="280" alt="Изображение Моста Дьявола">
-                <figcaption class="photo-catalog__figcaption">Мост Дьявола</figcaption>
-              </figure>
-              <span class="photo-author">Автор фото: Антон</span>
-                <button class="photo-catalog__button class">
-                  <span class="visually-hidden">Палец вверх</span>
-                </button>
-                <span class="class-result">254</span>
+              <img class="photo-catalog__image" src="#" width="280" height="280" alt="Изображение Моста Дьявола">
+              <span class="photo-catalog__description">Мост Дьявола</span>
+              <span class="photo-catalog__author">Автор фото: Антон</span>
+              <span class="photo-catalog__result">254</span>
             </li>
           </ul>
         </div>
@@ -113,18 +93,16 @@
           <p class="video-presentation__description">
             Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
           </p>
-          <video width="280" height="177" controls poster="#">
-            <source src="#" type="video/mp4">
-            <source src="#" type="video/webm">
-            Ваш браузер не поддерживает тег <code>video</code>.
-          </video>
+          <a class="video-presentation__link">
+            <img class="video-presentation__image" src="#" width="280" height="177" alt="Превью к видео">
+          </a>
         </div>
       </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__container">
         <b class="main-footer__title">#VISITSEDONA</b>
-        <ul class="social__list">
+        <ul class="social">
           <li class="social__item">
             <a class="social__link social__link--vkontakte">
               <span class="visually-hidden">Мы в вконтакте</span>
@@ -141,7 +119,7 @@
             </a>
           </li>
         </ul>
-        <div class="main-footer__copyright copyright">
+        <div class="copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <img class="copyright__logo" src="#" width="27" height="34" alt="Логотип HTML ACADEMY">
