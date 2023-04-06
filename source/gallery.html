@@ -41,19 +41,12 @@
       </nav>
     </header>
     <main class="gallery-container">
-      <section class="gallery-intro">
-        <div class="gallery-intro__container">
-          <img class="gallery-intro__image" src="#" width="229" height="29" alt="Седона">
-          <h1 class="visually-hidden">Фотогалерея Седоны</h1>
-        </div>
-      </section>
-      <section class="gallery-text">
-        <h2 class="gallery-text__title">
-          Фото и видео
-        </h2>
-        <p class="gallery-text__description">
-          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
-        </p>
+      <section class="intro intro--gallery">
+        <img class="intro__image" src="#" width="229" height="39" alt="Sedona">
+          <h1 class="intro__title">Фото и видео</h1>
+          <p class="intro__text">
+            Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+          </p>
       </section>
       <section class="photo-catalog">
         <div class="photo-catalog__container">
@@ -61,33 +54,53 @@
           <ul class="photo-catalog__list">
             <li class="photo-catalog__item">
               <div class="photo-card">
-                <img class="photo-card__image" src="#" width="280" height="280" alt="Изображение пустой дороги на закате">
+                <a class="photo-card__link" href="#">
+                  <img class="photo-card__image" src="#" width="280" height="280" alt="Изображение пустой дороги на закате">
+                </a>
                 <span class="photo-card__description">Неродные просторы</span>
                 <span class="photo-card__author">Автор фото: Борис</span>
+                <button class="photo-card__button" type="button">
+                  <span class="visually-hidden">Палец вверх</span>
+                </button>
                 <span class="photo-card__result">1350</span>
               </div>
             </li>
             <li class="photo-catalog__item">
               <div class="photo-card">
-                <img class="photo-card__image" src="#" width="280" height="280" alt="Какус, цветущий жёлтыми цветами">
+                <a class="photo-card__link" href="#">
+                  <img class="photo-card__image" src="#" width="280" height="280" alt="Какус, цветущий жёлтыми цветами">
+                </a>
                 <span class="photo-card__description">Местная растительность</span>
                 <span class="photo-card__author">Автор фото: Сергей</span>
+                <button class="photo-card__button" type="button">
+                  <span class="visually-hidden">Палец вверх</span>
+                </button>
                 <span class="photo-card__result">143</span>
               </div>
             </li>
             <li class="photo-catalog__item">
               <div class="photo-card">
-                <img class="photo-card__image" src="#" width="280" height="280" alt="Догога, уходящая вверх, окруженная зеленым лесом">
+                <a class="photo-card__link" href="#">
+                  <img class="photo-card__image" src="#" width="280" height="280" alt="Догога, уходящая вверх, окруженная зеленым лесом">
+                </a>
                 <span class="photo-card__description">Дорога на север</span>
                 <span class="photo-card__author">Автор фото: Петр</span>
+                <button class="photo-card__button" type="button">
+                  <span class="visually-hidden">Палец вверх</span>
+                </button>
                 <span class="photo-card__result">96</span>
               </div>
             </li>
             <li class="photo-catalog__item">
               <div class="photo-card">
-                <img class="photo-card__image" src="#" width="280" height="280" alt="Изображение Моста Дьявола">
+                <a class="photo-card__link" href="#">
+                  <img class="photo-card__image" src="#" width="280" height="280" alt="Изображение Моста Дьявола">
+                </a>
                 <span class="photo-card__description">Мост Дьявола</span>
                 <span class="photo-card__author">Автор фото: Антон</span>
+                <button class="photo-card__button" type="button">
+                  <span class="visually-hidden">Палец вверх</span>
+                </button>
                 <span class="photo-card__result">254</span>
               </div>
             </li>
@@ -97,7 +110,7 @@
       <section class="video-presentation">
         <div class="video-presentation__container">
           <h3 class="visually-hidden">Видео о Седоне</h3>
-          <span class="video-presentation__title">Все еще сомневаетесь?</span>
+          <span class="video-presentation__slogan">Все еще сомневаетесь?</span>
           <p class="video-presentation__description">
             Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
           </p>
