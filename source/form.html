@@ -50,24 +50,24 @@
       </section>
       <form class="feedback-form" action="https://echo.htmlacademy.ru/courses" method="post">
         <fieldset class="feedback-form__group">
-          <legend class="feedback-form__legeng">Представьтесь:</legend>
+          <legend class="feedback-form__legend">Представьтесь:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
                 <label>
                   <span class="feedback-form__text">Имя*:</span>
-                  <input class="feedback-form__input" type="text" name="user-name" value="Пётр" required>
+                  <input class="feedback-form__input" type="text" name="name" value="Пётр" required>
                 </label>
               </li>
               <li class="feedback-form__item">
                 <label>
                   <span class="feedback-form__text">Фамилия*:</span>
-                  <input class="feedback-form__input" type="text" name="user-surname" value="Пустота" required>
+                  <input class="feedback-form__input" type="text" name="surname" value="Пустота" required>
                 </label>
               </li>
               <li class="feedback-form__item">
                 <label>
                   <span class="feedback-form__text">Отчество:</span>
-                  <input class="feedback-form__input" type="text" name="user-patronymic" value="Викторович" required>
+                  <input class="feedback-form__input" type="text" name="patronymic" value="Викторович" required>
                 </label>
               </li>
             </ul>
@@ -78,13 +78,13 @@
               <li class="feedback-form__item">
                 <label>
                   <span class="feedback-form__text">Контактный телефон*:</span>
-                  <input class="feedback-form__input feedback-form__input--contacts" type="tel" name="user-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Введите телефон" required>
+                  <input class="feedback-form__input feedback-form__input--contacts" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Введите телефон" required>
                 </label>
               </li>
               <li class="feedback-form__item">
                 <label>
                   <span class="feedback-form__text">Электронная почта*:</span>
-                  <input class="feedback-form__input feedback-form__input--email" type="email" name="user-mail" placeholder="Введите e-mail" required>
+                  <input class="feedback-form__input feedback-form__input--email" type="email" name="mail" placeholder="Введите e-mail" required>
                 </label>
               </li>
             </ul>
@@ -95,49 +95,49 @@
               <li class="feedback-form__item">
                 <label>
                   <span class="feedback-form__text">Скорее положительное</span>
-                  <input type="radio" name="positive" value="positive" checked>
+                  <input class="feedback-form__radio" type="radio" name="positive" value="positive" checked>
                 </label>
               </li>
               <li class="feedback-form__item">
                 <label>
                   <span class="feedback-form__text">Скорее отрицательное</span>
-                  <input type="radio" name="negative" value="negative">
+                  <input class="feedback-form__radio" type="radio" name="negative" value="negative">
                 </label>
               </li>
               <li class="feedback-form__item">
                 <label>
                   <span class="feedback-form__text">Затрудняюсь ответить</span>
-                  <input type="radio" name="difficult" value="difficult">
+                  <input class="feedback-form__radio" type="radio" name="difficult" value="difficult">
                 </label>
               </li>
             </ul>
         </fieldset>
         <fieldset class="feedback-form__group">
-          <legend class="feedback-form__legeng">Посещенные достопримечательности:</legend>
+          <legend class="feedback-form__legend">Посещенные достопримечательности:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
                 <label>
                   <span class="feedback-form__text">Мост Дьявола
                   </span>
-                  <input type="checkbox" name="devil's bridge" value="devil's bridge" checked>
+                  <input class="feedback-form__checkbox" type="checkbox" name="devil" value="devil's bridge" checked>
                 </label>
               </li>
               <li class="feedback-form__list">
                 <label>
                   <span class="feedback-form__text">Гора-Колокол</span>
-                  <input type="checkbox" name="bell mountain" value="bell mountain" checked>
+                  <input class="feedback-form__checkbox" type="checkbox" name="bell" value="bell mountain" checked>
                 </label>
               </li>
               <li class="feedback-form__list">
                 <label>
                   <span class="feedback-form__text">Слайд-парк</span>
-                  <input type="checkbox" name="slide park" value="slide park" checked>
+                  <input class="feedback-form__checkbox" type="checkbox" name="slide" value="slide park" checked>
                 </label>
               </li>
               <li class="feedback-form__list">
                 <label>
                   <span class="feedback-form__text">Красные скалы</span>
-                  <input type="checkbox" name="red rocks" value="red rocks">
+                  <input class="feedback-form__checkbox" type="checkbox" name="rocks" value="red rocks">
                 </label>
               </li>
             </ul>
@@ -146,7 +146,7 @@
           <legend class="feedback-form__legend">Опишите свои эмоции:</legend>
             <textarea  name="user-comment" id="comment-field" rows="5">Опишите подробно все свои восторги</textarea>
         </fieldset>
-        <input class="feedback-form__button button" type="submit" value="Отправить отзыв">
+        <button class="feedback-form__button button" type="submit" value="Отправить отзыв">
         <span class="feedback-form__required">* — обязательные поля</span>
       </form>
     </main>
