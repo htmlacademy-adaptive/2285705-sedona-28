@@ -5,21 +5,24 @@
 }
 
 .intro__container {
-  margin-bottom: @bottom;
   min-height: 389px;
   background-color: @blue;
   background-image: url("../img/intro/back.jpg");
   background-repeat: no-repeat;
-
 }
 
-.intro__container--inner{
-  margin-bottom: @bottom;
-  min-height: 158px;
+.intro__container--inner {
+  height: 158px;
+  background-size: cover;
 }
 
+.intro__description {
+  background-color: @white;
+  padding: 37px 20px 25px 20px;
+}
 
 .intro__title {
+  margin: 0;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -28,6 +31,7 @@
 }
 
 .intro__text {
+  margin: 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
