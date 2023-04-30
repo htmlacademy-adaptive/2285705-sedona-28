@@ -3,11 +3,17 @@
   display: flex;
   flex-direction: column;
   background-color: @white;
-  min-height: 56px;
+  max-height: 56px;
 }
 
 .main-header__logo {
-  position: absolute;
-  top: 0;
-  left: calc(50% - @logo-width/ 2);
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__logo {
+    position: absolute;
+    top: 0;
+    left: calc(50% - @logo-width/ 2);
+  }
 }

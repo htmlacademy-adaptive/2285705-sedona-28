@@ -57,7 +57,7 @@
 }
 
 .feedback-form__button {
-  padding: 16px 69px;
+  padding: 16px 49px;
 }
 
 .feedback-form__textarea {
@@ -66,6 +66,30 @@
   padding: 16px;
   border: none;
   background-color: @lightgray;
+}
+
+//user
+
+.feedback-form__group--name {
+  padding-bottom: 39px;
+}
+
+.feedback-form__group--contacts {
+  padding-top: 24px;
+  padding-bottom: 34px;
+}
+
+//impressions
+
+.feedback-form__group--impressions,
+.feedback-form__group--attractions {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.feedback-form__group--feedback {
+  padding-top: 24px;
+  padding-bottom: 22px;
 }
 
 //media
@@ -148,7 +172,7 @@
 //impressions
 
 @media (min-width: @tablet-width) {
-  .feedback-form--impressions {
+  .feedback-form__group--impressions {
     margin-top: 63px;
     grid-column: span 2;
   }
@@ -163,7 +187,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .feedback-form--impressions {
+  .feedback-form__group--impressions {
     margin-top: 71px;
     grid-column: span 2;
   }
