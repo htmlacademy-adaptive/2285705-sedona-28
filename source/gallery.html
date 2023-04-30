@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Фотогалерея</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -17,31 +18,28 @@
               Открыть меню
             </span>
           </button>
-          <div class="main-nav__container">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">
-                  Главная
-                </a>
-              </li>
-              <li class="main-nav__item main-nav__item--current">
-                <a class="main-nav__link">
-                  Фото и видео
-                </a>
-              </li>
-            </ul>
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">
-                  Форма отзыва
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">
-                  HTML ACADEMY
-                </a>
-              </ul>
-          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Фото и видео
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                HTML ACADEMY
+              </a>
+            </li>
+          </ul>
         </nav>
       </header>
       <main>
@@ -60,17 +58,19 @@
           <div class="photo-catalog__container">
             <h3 class="visually-hidden">Каталог фотографий</h3>
             <ul class="photo-catalog__list">
-              <li class="photo-catalog__item">
+              <li class="photo-catalog__item photo-catalog__item--big">
                 <div class="photo-card">
                   <a class="photo-card__link" href="#">
                     <img class="photo-card__image" src="img/gallery/spaces.jpg" width="280" height="280" alt="Изображение пустой дороги на закате">
                   </a>
-                  <span class="photo-card__description">Неродные просторы</span>
-                  <span class="photo-card__author">Автор фото: Борис</span>
-                  <button class="photo-card__button" type="button">
-                    <span class="visually-hidden">Палец вверх</span>
-                  </button>
-                  <span class="photo-card__result">1350</span>
+                  <div class="photo-card__description">
+                    <span class="photo-card__name">Неродные просторы</span>
+                    <span class="photo-card__author">Автор фото: Борис</span>
+                    <button class="photo-card__button" type="button">
+                      <span class="visually-hidden">Палец вверх</span>
+                    </button>
+                    <span class="photo-card__result">1350</span>
+                  </div>
                 </div>
               </li>
               <li class="photo-catalog__item">
@@ -78,12 +78,14 @@
                   <a class="photo-card__link" href="#">
                     <img class="photo-card__image" src="img/gallery/vegetation.jpg" width="280" height="280" alt="Какус, цветущий жёлтыми цветами">
                   </a>
-                  <span class="photo-card__description">Местная растительность</span>
-                  <span class="photo-card__author">Автор фото: Сергей</span>
-                  <button class="photo-card__button" type="button">
-                    <span class="visually-hidden">Палец вверх</span>
-                  </button>
-                  <span class="photo-card__result">143</span>
+                  <div class="photo-card__description">
+                    <span class="photo-card__name">Местная растительность</span>
+                    <span class="photo-card__author">Автор фото: Сергей</span>
+                    <button class="photo-card__button" type="button">
+                      <span class="visually-hidden">Палец вверх</span>
+                    </button>
+                    <span class="photo-card__result">143</span>
+                  </div>
                 </div>
               </li>
               <li class="photo-catalog__item">
@@ -91,12 +93,14 @@
                   <a class="photo-card__link" href="#">
                     <img class="photo-card__image" src="img/gallery/road.jpg" width="280" height="280" alt="Догога, уходящая вверх, окруженная зеленым лесом">
                   </a>
-                  <span class="photo-card__description">Дорога на север</span>
-                  <span class="photo-card__author">Автор фото: Петр</span>
-                  <button class="photo-card__button" type="button">
-                    <span class="visually-hidden">Палец вверх</span>
-                  </button>
-                  <span class="photo-card__result">96</span>
+                  <div class="photo-card__description">
+                    <span class="photo-card__name">Дорога на север</span>
+                    <span class="photo-card__author">Автор фото: Петр</span>
+                    <button class="photo-card__button" type="button">
+                      <span class="visually-hidden">Палец вверх</span>
+                    </button>
+                    <span class="photo-card__result">96</span>
+                  </div>
                 </div>
               </li>
               <li class="photo-catalog__item">
@@ -104,12 +108,14 @@
                   <a class="photo-card__link" href="#">
                     <img class="photo-card__image" src="img/gallery/bridge.jpg" width="280" height="280" alt="Изображение Моста Дьявола">
                   </a>
-                  <span class="photo-card__description">Мост Дьявола</span>
-                  <span class="photo-card__author">Автор фото: Антон</span>
-                  <button class="photo-card__button" type="button">
-                    <span class="visually-hidden">Палец вверх</span>
-                  </button>
-                  <span class="photo-card__result">254</span>
+                  <div class="photo-card__description">
+                    <span class="photo-card__name">Мост Дьявола</span>
+                    <span class="photo-card__author">Автор фото: Антон</span>
+                    <button class="photo-card__button" type="button">
+                      <span class="visually-hidden">Палец вверх</span>
+                    </button>
+                    <span class="photo-card__result">254</span>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -129,7 +135,6 @@
         </section>
       </main>
       <footer class="main-footer">
-        <div class="main-footer__container">
           <b class="main-footer__tag">#VISITSEDONA</b>
           <ul class="social">
             <li class="social__item">
@@ -165,7 +170,6 @@
               </svg>
             </a>
           </div>
-        </div>
       </footer>
     </div>
   </body>

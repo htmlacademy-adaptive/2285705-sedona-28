@@ -1,5 +1,13 @@
 .main-header {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: @white;
+  min-height: 56px;
+}
+
+.main-header__logo {
+  position: absolute;
+  top: 0;
+  left: calc(50% - @logo-width/ 2);
 }

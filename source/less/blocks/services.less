@@ -1,11 +1,12 @@
 .services {
   list-style: none;
-  padding: 23px 18px 46px;
+  padding: 0;
   background-color: @white;
 }
 
 .services__container {
   margin-left: 47px;
+  text-align: center;
 }
 
 .services__title {
@@ -36,4 +37,35 @@
 
 .services__item--souvenirs {
   background-image: url("../img/services/souvenirs.svg");
+}
+
+//media
+
+@media (min-width: @tablet-width) {
+  .services {
+    display: flex;
+    grid-column: 1/4;
+    list-style: none;
+  }
+
+  .services__container {
+    margin: 0;
+    padding: 33px;
+  }
+
+  .services__item {
+    min-width: 256px;
+    min-height: 331px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .services__item {
+    min-width: 400px;
+  }
+
+  .services__container {
+    padding: 50px;
+  }
 }
