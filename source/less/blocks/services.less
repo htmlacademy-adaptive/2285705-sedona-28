@@ -1,4 +1,6 @@
 .services {
+  display: grid;
+  row-gap: 25px;
   list-style: none;
   margin: 0;
   padding: 23px 18px 46px;
@@ -30,6 +32,10 @@
   line-height: 26px;
   text-transform: uppercase;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 34px;
+  }
 }
 
 .services__description {

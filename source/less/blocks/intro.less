@@ -22,12 +22,18 @@
 
 .intro__title {
   margin: 0;
+  margin-bottom: 37px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 39px;
+    font-size: 30px;
+  }
 }
 
 .intro__text {
@@ -38,6 +44,10 @@
   line-height: 21px;
   text-transform: uppercase;
   color: @darkgray;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+  }
 }
 
 .intro__image {

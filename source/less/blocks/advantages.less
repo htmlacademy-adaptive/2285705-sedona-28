@@ -13,13 +13,18 @@
 
 .advantages__slogan {
   margin: 0;
-  padding-bottom: 39px;
+  margin-bottom: 35px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    margin-bottom: 39px;
+  }
 }
 
 .advantages__card {
@@ -28,15 +33,6 @@
 
   @media (min-width: @tablet-width) {
     min-width: 256px;
-  }
-}
-
-.advantages__card--blue {
-  background-color: @blue;
-  color: @white;
-
-  @media (min-width: @tablet-width) {
-    max-width: 256px;
     padding: 52px 33px 31px;
   }
 
@@ -44,6 +40,11 @@
     max-width: 400px;
     padding: 52px 50px 51px 50px;
   }
+}
+
+.advantages__card--blue {
+  background-color: @blue;
+  color: @white;
 }
 
 .advantages__wrapper {
@@ -67,27 +68,33 @@
 
 .advantages__title {
   margin: 0;
+  margin-bottom: 23px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
-}
 
-.advantages__title--blue {
-  margin-bottom: 11px;
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .advantages__number {
-  text-transform: uppercase;
+  display: block;
+  margin-bottom: 28px;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 400;
-}
+  text-transform: uppercase;
 
-.advantages__number--blue {
-  margin-bottom: 17px;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 34px;
+  }
 }
 
 .advantages__item--gray {
-  background-color: @light;
+  background-color: @lightgray1;
 }
 
 .advantages__text--blue {
@@ -113,20 +120,22 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  .advantages__container {
-    display: flex;
-    grid-column: 1/-1;
-  }
-
-  .advantages__item--image {
+.advantages__container {
+  @media (min-width: @tablet-width) {
     display: flex;
     grid-column: 1/-1;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .advantages__image {
+.advantages__item--image {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    grid-column: 1/-1;
+  }
+}
+
+.advantages__image {
+  @media (min-width: @desktop-width) {
     grid-column: span 2;
   }
 }
