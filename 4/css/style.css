@@ -412,6 +412,9 @@ template {
   .main-nav__item {
     background-color: #FFFFFF;
   }
+  .main-nav__link--current {
+    color: #766357;
+  }
 }
 .intro {
   background-color: #FFFFFF;
@@ -433,12 +436,19 @@ template {
 }
 .intro__title {
   margin: 0;
+  margin-bottom: 37px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
+}
+@media (min-width: 768px) {
+  .intro__title {
+    margin-bottom: 39px;
+    font-size: 30px;
+  }
 }
 .intro__text {
   margin: 0;
@@ -448,6 +458,11 @@ template {
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
+}
+@media (min-width: 768px) {
+  .intro__text {
+    font-size: 14px;
+  }
 }
 .intro__image {
   display: block;
@@ -467,13 +482,19 @@ template {
 }
 .advantages__slogan {
   margin: 0;
-  padding-bottom: 39px;
+  margin-bottom: 35px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+}
+@media (min-width: 768px) {
+  .advantages__slogan {
+    font-size: 21px;
+    margin-bottom: 39px;
+  }
 }
 .advantages__card {
   padding: 18px;
@@ -482,23 +503,18 @@ template {
 @media (min-width: 768px) {
   .advantages__card {
     min-width: 256px;
+    padding: 52px 33px 31px;
+  }
+}
+@media (min-width: 1200px) {
+  .advantages__card {
+    max-width: 400px;
+    padding: 52px 50px 51px 50px;
   }
 }
 .advantages__card--blue {
   background-color: #81B3D2;
   color: #FFFFFF;
-}
-@media (min-width: 768px) {
-  .advantages__card--blue {
-    max-width: 256px;
-    padding: 52px 33px 31px;
-  }
-}
-@media (min-width: 1200px) {
-  .advantages__card--blue {
-    max-width: 400px;
-    padding: 52px 50px 51px 50px;
-  }
 }
 .advantages__wrapper {
   padding: 24px 26px;
@@ -521,20 +537,30 @@ template {
 }
 .advantages__title {
   margin: 0;
+  margin-bottom: 23px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
 }
-.advantages__title--blue {
-  margin-bottom: 11px;
+@media (min-width: 768px) {
+  .advantages__title {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 .advantages__number {
-  text-transform: uppercase;
+  display: block;
+  margin-bottom: 28px;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 400;
+  text-transform: uppercase;
 }
-.advantages__number--blue {
-  margin-bottom: 17px;
+@media (min-width: 768px) {
+  .advantages__number {
+    margin-bottom: 34px;
+  }
 }
 .advantages__item--gray {
   background-color: #d6d6d6;
@@ -567,6 +593,8 @@ template {
     display: flex;
     grid-column: 1/-1;
   }
+}
+@media (min-width: 768px) {
   .advantages__item--image {
     display: flex;
     grid-column: 1/-1;
@@ -578,6 +606,8 @@ template {
   }
 }
 .services {
+  display: grid;
+  row-gap: 25px;
   list-style: none;
   margin: 0;
   padding: 23px 18px 46px;
@@ -609,6 +639,11 @@ template {
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
+}
+@media (min-width: 768px) {
+  .services__title {
+    margin-bottom: 34px;
+  }
 }
 .services__description {
   display: block;
@@ -657,6 +692,7 @@ template {
 }
 .hotel-search__title {
   margin: 0;
+  margin-bottom: 31px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -668,6 +704,13 @@ template {
     margin-bottom: 30px;
     font-size: 30px;
     line-height: 26px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+@media (min-width: 1200px) {
+  .hotel-search__title {
+    line-height: 30px;
+    text-shadow: none;
   }
 }
 .hotel-search__description {
@@ -680,6 +723,12 @@ template {
     margin-bottom: 44px;
     font-size: 14px;
     line-height: 21px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+@media (min-width: 1200px) {
+  .hotel-search__description {
+    text-shadow: none;
   }
 }
 .hotel-search__button {
@@ -698,6 +747,7 @@ template {
   .main-footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 36px 60px;
   }
 }
@@ -778,7 +828,11 @@ template {
 }
 .photo-card__button {
   border: none;
-  border-color: #FFFFFF;
+  background-color: #FFFFFF;
+  width: 21px;
+  height: 23px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .photo-card__result {
   font-size: 14px;
@@ -943,7 +997,7 @@ template {
 @media (min-width: 768px) {
   .feedback-form__group--name {
     max-width: 295px;
-    margin-right: 28.5px;
+    margin-right: 28px;
   }
 }
 @media (min-width: 1200px) {
@@ -974,6 +1028,8 @@ template {
     flex-direction: column;
     justify-content: space-between;
   }
+}
+@media (min-width: 768px) {
   .feedback-form__list--user {
     display: grid;
     row-gap: 16px;
@@ -1000,8 +1056,8 @@ template {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
-    padding-left: 38.5px;
-    padding-right: 38.5px;
+    padding-left: 39px;
+    padding-right: 39px;
   }
 }
 @media (min-width: 1200px) {
