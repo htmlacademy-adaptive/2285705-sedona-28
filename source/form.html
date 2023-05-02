@@ -12,12 +12,12 @@
         <a class="main-header__logo">
           <img class="main-header__logo-image" src="img/header/logo.svg" width="185" height="96" alt="Седона">
         </a>
+        <button class="main-header__toggle" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">
-              Открыть меню
-            </span>
-          </button>
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link">
@@ -55,40 +55,40 @@
           </div>
         </section>
         <form class="feedback-form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <fieldset class="feedback-form__group feedback-form__group--user feedback-form__group--name">
+          <fieldset class="feedback-form__group feedback-form__group--name">
             <legend class="feedback-form__legend">Представьтесь:</legend>
               <ul class="feedback-form__list feedback-form__list--user">
                 <li class="feedback-form__item">
-                  <label class="feedback-form__user">
+                  <label class="feedback-form__label">
                     <span class="feedback-form__text">Имя*:</span>
                     <input class="feedback-form__input" type="text" name="name" value="Пётр" required>
                   </label>
                 </li>
                 <li class="feedback-form__item">
-                  <label class="feedback-form__user">
+                  <label class="feedback-form__label">
                     <span class="feedback-form__text">Фамилия*:</span>
                     <input class="feedback-form__input" type="text" name="surname" value="Пустота" required>
                   </label>
                 </li>
                 <li class="feedback-form__item">
-                  <label class="feedback-form__user">
+                  <label class="feedback-form__label">
                     <span class="feedback-form__text">Отчество:</span>
                     <input class="feedback-form__input" type="text" name="patronymic" value="Викторович" required>
                   </label>
                 </li>
               </ul>
           </fieldset>
-          <fieldset class="feedback-form__group feedback-form__group--user feedback-form__group--contacts" >
+          <fieldset class="feedback-form__group feedback-form__group--contacts">
             <legend class="feedback-form__legend">Контактная информация:</legend>
               <ul class="feedback-form__list feedback-form__list--user">
                 <li class="feedback-form__item">
-                  <label class="feedback-form__user">
+                  <label class="feedback-form__label">
                     <span class="feedback-form__text">Контактный телефон*:</span>
                     <input class="feedback-form__input feedback-form__input--contacts" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Введите телефон" required>
                   </label>
                 </li>
                 <li class="feedback-form__item">
-                  <label class="feedback-form__user">
+                  <label class="feedback-form__label">
                     <span class="feedback-form__text">Электронная почта*:</span>
                     <input class="feedback-form__input feedback-form__input--email" type="email" name="mail" placeholder="Введите e-mail" required>
                   </label>

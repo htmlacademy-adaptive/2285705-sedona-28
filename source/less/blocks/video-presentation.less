@@ -4,48 +4,43 @@
   align-items: center;
   padding: 17px 26px 0 28px;
   background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    padding: 58px 60px 40px;
+  }
 }
 
 .video-presentation__container {
   margin-bottom: 38px;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    padding: 61px 360px 63px;
+    margin: 0;
+  }
 }
 
 .video-presentation__slogan {
-  display: block;
   margin-bottom: 37px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .video-presentation__description {
   margin: 0;
   text-transform: uppercase;
   color: @darkgray;
-}
 
-@media (min-width: @tablet-width) {
-  .video-presentation {
-    padding: 58px 60px 40px;
-  }
-
-  .video-presentation__slogan {
-    font-size: 30px;
-    line-height: 26px;
-  }
-
-  .video-presentation__description {
+  @media (min-width: @tablet-width) {
     font-size: 14px;
     line-height: 21px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .video-presentation__container {
-    padding: 61px 360px 63px;
-    margin: 0;
   }
 }
