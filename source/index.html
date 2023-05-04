@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -11,37 +12,34 @@
         <a class="main-header__logo">
           <img class="main-header__logo-image" src="img/header/logo.svg" width="185" height="96" alt="Седона">
         </a>
+        <button class="main-header__toggle" type="button">
+          <span class="visually-hidden">
+            Открыть меню
+          </span>
+        </button>
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">
-              Открыть меню
-            </span>
-          </button>
-          <div class="main-nav__container">
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--current">
-                <a class="main-nav__link">
-                  Главная
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">
-                  Фото и видео
-                </a>
-              </li>
-            </ul>
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">
-                  Форма отзыва
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="#">
-                  HTML ACADEMY
-                </a>
-              </ul>
-          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Фото и видео
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                HTML ACADEMY
+              </a>
+            </li>
+          </ul>
         </nav>
       </header>
       <main>
@@ -54,70 +52,70 @@
         <section class="advantages">
           <div class="advantages__description">
             <h2 class="visually-hidden">Приемущества Седоны</h2>
-            <p class="advantages__slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="advantages__slogan">Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</p>
             <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </div>
-          <div class="advantages__container">
-            <ol class="advantages__list">
-              <li class="advantages__item advantages__item--blue">
-                <div class="advantages__card">
+          <ol class="advantages__list">
+            <li class="advantages__item">
+              <div class="advantages__container">
+                <div class="advantages__card advantages__card--blue">
                   <h3 class="advantages__title advantages__title--blue">Настоящий городок</h3>
-                  <b class="advantages__number advantages__number--blue">№ 1</b>
+                  <b class="advantages__number advantages__number--blue">&#8212; № 1 &#8212;</b>
                   <p class="advantages__text advantages__text--blue">Седона не аттракцион для туристов, там течет своя жизнь</p>
                 </div>
                 <img class="advantages__image" src="img/index/sedona.jpg"  width="320" height="260" alt="Изображение городка Седоны">
-                <ul class="services">
-                  <li class="services__item services__item--housing">
-                    <div class="services__container">
-                      <h4 class="services__title">Жильё</h4>
-                      <p class="services__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                    </div>
-                  </li>
-                  <li class="services__item services__item--food">
-                    <div class="services__container">
-                      <h4 class="services__title">Еда</h4>
-                      <p class="services__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                    </div>
-                  </li>
-                  <li class="services__item services__item--souvenirs">
-                    <div class="services__container">
-                      <h4 class="services__title">Сувениры</h4>
-                      <p class="services__description">Не только китайского, но и местного производства!</p>
-                    </div>
-                  </li>
-                </ul>
-              </li>
-                <li class="advantages__item advantages__item--blue">
-                  <div class="advantages__card">
-                    <h3 class="advantages__title advantages__title--blue">Там есть мост дьявола</h3>
-                    <b class="advantages__number advantages__number--blue">№ 2</b>
-                    <p class="advantages__text advantages__text--blue">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-                  </div>
-                  <img class="advantages__image" src="img/index/diablo.jpg"  width="320" height="260" alt="Изображение моста Дьявола">
-                </li>
-                <li class="advantages__item advantages__item--gray">
-                  <div class="advantages__wrapper">
-                    <h3 class="advantages__title">Небольшая площадь</h3>
-                    <b class="advantages__number">№ 3</b>
-                    <p class="advantages__text">Все интересные места находятся очень близко</p>
+              </div>
+              <ul class="services">
+                <li class="services__item services__item--housing">
+                  <div class="services__container">
+                    <h4 class="services__title">Жильё</h4>
+                    <p class="services__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                   </div>
                 </li>
-                <li class="advantages__item advantages__item--gray">
-                  <div class="advantages__wrapper">
-                    <h3 class="advantages__title">Красивая дорога</h3>
-                    <b class="advantages__number">№ 4</b>
-                    <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <li class="services__item services__item--food">
+                  <div class="services__container">
+                    <h4 class="services__title">Еда</h4>
+                    <p class="services__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                   </div>
                 </li>
-                <li class="advantages__item advantages__item--gray">
-                  <div class="advantages__wrapper">
-                    <h3 class="advantages__title">Мало туристов</h3>
-                    <b class="advantages__number">№ 5</b>
-                    <p class="advantages__text">Большинство едет в Гранд-Каньон и толпится там</p>
+                <li class="services__item services__item--souvenirs">
+                  <div class="services__container">
+                    <h4 class="services__title">Сувениры</h4>
+                    <p class="services__description">Не только китайского, но и местного производства!</p>
                   </div>
                 </li>
-            </ol>
-          </div>
+              </ul>
+            </li>
+            <li class="advantages__item advantages__item--image">
+              <div class="advantages__card advantages__card--blue">
+                <h3 class="advantages__title advantages__title--blue ">Там есть мост дьявола</h3>
+                <b class="advantages__number advantages__number--blue">&#8212; № 2 &#8212;</b>
+                <p class="advantages__text advantages__text--blue">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              </div>
+              <img class="advantages__image" src="img/index/diablo.jpg"  width="320" height="260" alt="Изображение моста Дьявола">
+            </li>
+            <li class="advantages__item advantages__item--gray">
+              <div class="advantages__wrapper">
+                <h3 class="advantages__title">Небольшая площадь</h3>
+                <b class="advantages__number">&#8212; № 3 &#8212;</b>
+                <p class="advantages__text">Все интересные места находятся очень близко</p>
+              </div>
+            </li>
+            <li class="advantages__item advantages__item--gray">
+              <div class="advantages__wrapper">
+                <h3 class="advantages__title">Красивая дорога</h3>
+                <b class="advantages__number">&#8212; № 4 &#8212;</b>
+                <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </div>
+            </li>
+            <li class="advantages__item advantages__item--gray">
+              <div class="advantages__wrapper">
+                <h3 class="advantages__title">Мало туристов</h3>
+                <b class="advantages__number">&#8212; № 5 &#8212;</b>
+                <p class="advantages__text">Большинство едет в Гранд-Каньон и толпится там</p>
+              </div>
+            </li>
+          </ol>
         </section>
         <section class="hotel-search">
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
@@ -130,7 +128,6 @@
         </section>
       </main>
       <footer class="main-footer">
-        <div class="main-footer__container">
           <b class="main-footer__tag">#VISITSEDONA</b>
           <ul class="social">
             <li class="social__item">
@@ -166,7 +163,6 @@
               </svg>
             </a>
           </div>
-        </div>
         </footer>
       </div>
     </body>

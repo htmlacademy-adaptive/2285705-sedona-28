@@ -4,24 +4,60 @@
 
 .advantages__description {
   padding: 32px 18px 16px 18px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 47px 124px 55px;
+  }
 }
 
 .advantages__slogan {
   margin: 0;
-  padding-bottom: 35px;
+  margin-bottom: 35px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 39px;
+    font-size: 21px;
+  }
 }
 
 .advantages__card {
   padding: 18px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    min-width: 256px;
+    padding: 52px 33px 31px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 400px;
+    padding: 52px 50px 51px 50px;
+  }
+}
+
+.advantages__card--blue {
+  background-color: @blue;
+  color: @white;
 }
 
 .advantages__wrapper {
   padding: 24px 26px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 41px 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 52px 50px;
+  }
 }
 
 .advantages__text {
@@ -32,30 +68,70 @@
 
 .advantages__title {
   margin: 0;
+  margin-bottom: 23px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
 }
 
 .advantages__number {
+  display: block;
+  margin-bottom: 28px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 34px;
+  }
+}
+
+.advantages__item--gray {
+  background-color: @lightgray1;
+}
+
+.advantages__text--blue {
+  margin: 0;
+  color: @white;
 }
 
 .advantages__list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    min-width: @tablet-width;
+    display: grid;
+    grid-template-columns: 256px 256px 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: @desktop-width;
+    grid-template-columns: 400px 400px 400px;
+  }
 }
 
-.advantages__item--blue {
-  background-color: @blue;
-  color: @white;
+.advantages__container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    grid-column: 1/-1;
+  }
 }
 
-.advantages__item--gray {
-  background-color: #d6d6d6;
+.advantages__item--image {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    grid-column: 1/-1;
+  }
 }
 
-.advantages__text--blue {
-  color: @white;
+.advantages__image {
+  @media (min-width: @desktop-width) {
+    grid-column: span 2;
+  }
 }

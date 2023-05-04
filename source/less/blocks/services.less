@@ -1,29 +1,66 @@
 .services {
+  display: grid;
+  row-gap: 25px;
   list-style: none;
+  margin: 0;
   padding: 23px 18px 46px;
   background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    grid-column: 1/-1;
+    padding: 0;
+    list-style: none;
+  }
 }
 
 .services__container {
   margin-left: 47px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .services__title {
+  margin: 0;
+  margin-bottom: 28px;
   font-size: 18px;
   font-weight: 700px;
   line-height: 26px;
   text-transform: uppercase;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 34px;
+  }
 }
 
 .services__description {
+  margin: 0;
   text-transform: uppercase;
   color: @darkgray;
+}
+
+.services__description:not(:last-child) {
+  margin-bottom: 25px;
 }
 
 .services__item {
   background-repeat: no-repeat;
   background-position: top left;
+
+  @media (min-width: @tablet-width) {
+    min-width: 256px;
+    padding: 153px 33px 64px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 400px;
+    padding: 170px 50px 67px;
+  }
 }
 
 .services__item--housing {

@@ -1,18 +1,34 @@
 .video-presentation {
   padding: 17px 26px 0 28px;
   background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    padding: 58px 60px 40px;
+  }
 }
 
 .video-presentation__container {
   margin-bottom: 38px;
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    padding: 61px 360px 63px;
+    margin: 0;
+  }
 }
 
 .video-presentation__slogan {
+  display: block;
+  margin-bottom: 39px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .video-presentation__description {

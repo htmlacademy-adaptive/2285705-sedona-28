@@ -1,6 +1,14 @@
 .page__container {
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
 }
 
 .page__body {
@@ -8,5 +16,5 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  background-color: #e7e5e5;
+  background-color: @lightgray3;
 }
