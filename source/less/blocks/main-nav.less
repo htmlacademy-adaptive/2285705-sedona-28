@@ -1,6 +1,5 @@
 .main-nav {
   background-color: @blue;
-  background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
     background-color: @white;
@@ -40,18 +39,12 @@
   color: @white;
 
   @media (min-width: @tablet-width) {
-    font-size: 14px;
-    line-height: 21px;
     color: @black;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .main-nav__item {
-    background-color: @white;
-  }
-
-  .main-nav__link--current {
+.main-nav__link--current {
+  @media (min-width: @tablet-width) {
     color: @brown;
   }
 }

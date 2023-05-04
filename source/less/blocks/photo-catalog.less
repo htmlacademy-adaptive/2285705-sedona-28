@@ -13,19 +13,16 @@
   }
 
   @media (min-width: @desktop-width) {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .photo-catalog__item--big {
+.photo-catalog__item--big {
+  @media (min-width: @tablet-width) {
     grid-column: span 2;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .photo-catalog__item--big {
+  @media (min-width: @desktop-width) {
     grid-column: span 3;
   }
 }

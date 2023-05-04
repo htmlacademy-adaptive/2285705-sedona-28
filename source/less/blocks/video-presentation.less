@@ -1,7 +1,4 @@
 .video-presentation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 17px 26px 0 28px;
   background-color: @white;
 
@@ -21,7 +18,8 @@
 }
 
 .video-presentation__slogan {
-  margin-bottom: 37px;
+  display: block;
+  margin-bottom: 39px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -30,7 +28,6 @@
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
-    line-height: 26px;
   }
 }
 
@@ -38,9 +35,4 @@
   margin: 0;
   text-transform: uppercase;
   color: @darkgray;
-
-  @media (min-width: @tablet-width) {
-    font-size: 14px;
-    line-height: 21px;
-  }
 }

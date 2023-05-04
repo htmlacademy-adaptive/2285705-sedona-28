@@ -43,15 +43,53 @@
 
 .modal__title {
   margin: 0;
+  margin-bottom: 37px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
   color: @black;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 39px;
+  }
 }
 
 .modal__text {
   margin: 0;
+  margin-bottom: 26px;
   text-transform: uppercase;
+  text-align: center;
   color: @darkgray;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 29px;
+  }
+}
+
+.modal__text--error {
+  margin-bottom: 28px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.modal__button {
+  padding: 18px 62px 14px 60px;
+  max-width: 280px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 270px;
+  }
+}
+
+.modal__button--error {
+  padding: 18px 64px 14px 63px;
+  max-width: 180px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 458px;
+  }
 }
