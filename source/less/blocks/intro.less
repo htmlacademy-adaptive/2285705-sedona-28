@@ -3,10 +3,26 @@
 }
 
 .intro__container {
+  position: relative;
   min-height: 389px;
   background-color: @blue;
   background-image: url("../img/intro/back.jpg");
   background-repeat: no-repeat;
+}
+
+.intro__container::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  z-index: 2;
+  width: 320px;
+  height: 57px;
+  background-image: url("../img/index/divider.png");
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .intro__container--inner {
@@ -15,7 +31,9 @@
 }
 
 .intro__description {
-  padding: 37px 20px 25px 20px;
+  max-width: 467px;
+  margin: 0 auto;
+  padding: 37px 20px 15px 20px;
   text-align: center;
   background-color: @white;
 }
@@ -42,6 +60,12 @@
 }
 
 .intro__image {
-  display: block;
-  margin: 0 auto 52px;
+  position: absolute;
+  top: 90px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.intro__image--inner {
+  top: 40%;
 }

@@ -9,6 +9,10 @@
   @media (min-width: @tablet-width) {
     padding: 47px 124px 55px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 58px 359px 55px 357px;
+  }
 }
 
 .advantages__slogan {
@@ -22,14 +26,15 @@
   color: @black;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 39px;
     font-size: 21px;
   }
 }
 
 .advantages__card {
-  padding: 18px;
+  padding: 37px 0;
   text-align: center;
+  background-color: @blue;
+  color: @white;
 
   @media (min-width: @tablet-width) {
     min-width: 256px;
@@ -37,14 +42,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 400px;
+    min-width: 400px;
     padding: 52px 50px 51px 50px;
   }
-}
-
-.advantages__card--blue {
-  background-color: @blue;
-  color: @white;
 }
 
 .advantages__wrapper {
@@ -83,6 +83,9 @@
 .advantages__number {
   display: block;
   margin-bottom: 28px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
@@ -91,7 +94,20 @@
 }
 
 .advantages__item--gray {
-  background-color: @lightgray1;
+  position: relative;
+  background-color: @lightgray4;
+}
+
+.advantages__item--gray:not(:last-child)::after {
+  @media (max-width: @mobile-width-only) {
+    content: "";
+    position: absolute;
+    right: 20px;
+    width: 284px;
+    height: 1px;
+    z-index: 1;
+    background-color: @lightgray1;
+  }
 }
 
 .advantages__text--blue {
@@ -123,9 +139,31 @@
   }
 }
 
+.advantages__container .advantages__card {
+  @media (max-width: @mobile-width-only) {
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+}
+
+.advantages__container .advantages__card::before {
+  @media (max-width: @mobile-width-only) {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: 0;
+    width: 320px;
+    height: 37px;
+    background-image: url("../img/index/div.png");
+    background-repeat: no-repeat;
+  }
+}
+
 .advantages__item--image {
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-direction: row-reverse;
     grid-column: 1/-1;
   }
 }

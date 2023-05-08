@@ -4,10 +4,33 @@
 
 .copyright__text {
   margin-right: 12px;
+  margin-bottom: 7px;
+  font-weight: 400;
   text-transform: uppercase;
   color: @black;
+
+  &:hover {
+    color: @blue;
+  }
+
+  &:active {
+    color: @lightbrown;
+  }
+
+  & .current {
+    color: @brown;
+  }
 }
 
 .copyright__link {
   text-decoration: none;
+  color: @black;
+
+  &:hover {
+    color: @blue;
+  }
+
+  &:active {
+    color: @lightbrown;
+  }
 }

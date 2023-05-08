@@ -46,9 +46,44 @@
 }
 
 .hotel-search__button {
-  padding: 16px 49px;
+  margin-top: 32px;
+  padding: 16px 38px;
 
   @media (min-width: @tablet-width) {
     padding: 14px 121px 17px;
   }
+}
+
+.hotel-search__button:hover {
+  box-shadow: none;
+}
+
+.hotel-search__button:active {
+  background-color: @darkblue1;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.hotel-search__button:disabled {
+  background-color: @grey1;
+}
+
+.hotel-search__map {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+.hotel-search__map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.hotel-search__map--nojs {
+  background-image: url("../img/index/map.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
 }
