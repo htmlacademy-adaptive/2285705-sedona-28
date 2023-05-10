@@ -1,5 +1,5 @@
 .feedback-form {
-  padding: 24px 20px 22px;
+  padding: 0 20px;
   background-color: @white;
 
   @media (min-width: @tablet-width) {
@@ -23,7 +23,7 @@
 .feedback-form__group::before {
   content: "";
   position: absolute;
-  top: -70px;
+  top: -72px;
   right: -20px;
   z-index: 0;
   width: 320px;
@@ -70,7 +70,7 @@
 
 .feedback-form__legend {
   position: relative;
-  padding: 0 20px;
+  padding: 24px 20px 0;
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 700;
@@ -82,7 +82,7 @@
   z-index: 10;
 
   @media (min-width: @tablet-width) {
-    padding: 0 40px;
+    padding: 0 66px;
   }
 }
 
@@ -205,6 +205,7 @@
   padding-bottom: 39px;
 
   @media (min-width: @tablet-width) {
+    padding-bottom: 0;
     max-width: 295px;
     margin-right: 28px;
   }
@@ -216,7 +217,7 @@
 }
 
 .feedback-form__group--contacts {
-  padding: 0;
+  padding-bottom: 34px;
   align-content: start;
 
   @media (min-width: @tablet-width) {
@@ -272,7 +273,6 @@
 //impressions
 
 .feedback-form__group--impressions {
-  padding-top: 24px;
   padding-bottom: 24px;
 
   @media (min-width: @tablet-width) {
@@ -294,8 +294,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
-    padding-left: 39px;
-    padding-right: 39px;
+    padding: 28px 39px 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -395,7 +394,6 @@
 }
 
 .feedback-form__group--attractions {
-  padding-top: 24px;
   padding-bottom: 24px;
 
   @media (min-width: @tablet-width) {
@@ -414,8 +412,7 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 16px;
     column-gap: 32px;
-    padding-left: 84px;
-    padding-right: 84px;
+    padding: 24px 84px;
   }
 
   @media (min-width: @desktop-width) {
@@ -429,7 +426,6 @@
 //feedback
 
 .feedback-form__group--feedback {
-  padding-top: 24px;
   padding-bottom: 22px;
 
   @media (min-width: @tablet-width) {
