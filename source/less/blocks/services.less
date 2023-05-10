@@ -22,6 +22,10 @@
     padding: 0;
     margin: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    max-width: 300px;
+  }
 }
 
 .services__title {
@@ -71,6 +75,10 @@
 
 .services__item--food {
   background-image: url("../img/services/food.svg");
+
+  @media (min-width: @tablet-width) {
+    padding: 153px 50px 64px;
+  }
 }
 
 .services__item--souvenirs {

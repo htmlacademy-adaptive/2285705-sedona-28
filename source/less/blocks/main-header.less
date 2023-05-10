@@ -9,9 +9,11 @@
 }
 
 .main-header__logo {
+  position: relative;
   display: flex;
   justify-content: center;
   align-self: center;
+  z-index: 3;
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -19,8 +21,4 @@
     transform: translateX(-50%);
     top: 0;
   }
-}
-
-.main-header__logo-image {
-  z-index: 3;
 }

@@ -24,14 +24,6 @@
   &:not(:last-child) {
     margin-right: 6px;
   }
-
-  &:hover {
-    background-color: @darkblue;
-  }
-
-  &:active {
-    background-color: @darkblue1;
-  }
 }
 
 .social__icon:active {
@@ -42,10 +34,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 11px;
+  padding: 12px;
   color: @white;
+
+  &:hover {
+    background-color: @darkblue;
+  }
+
+  &:active {
+    background-color: @darkblue1;
+  }
 }
 
-.social__link:focus {
-  opacity: 0.3;
+.social__link--vkontakte {
+  padding-top: 17px;
+  padding-bottom: 17px;
 }

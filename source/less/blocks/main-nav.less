@@ -36,6 +36,7 @@
       content: "";
       position: absolute;
       bottom: 0;
+      left: 0;
       height: 7px;
       width: 100%;
       background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
@@ -81,87 +82,50 @@
 .main-nav__toggle {
   position: absolute;
   top: 17px;
-  right: 21px;
+  right: 27px;
   width: 22px;
   height: 22px;
   z-index: 5;
   border: none;
+  color: @blue;
   background-color: @white;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
-.main-nav--closed .main-nav__toggle::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 5;
-  width: 22px;
-  height: 4px;
-  background-color: @blue;
-  box-shadow: 0 10px 0 0 @blue, 0 20px 0 0 @blue;
-}
-
-.main-nav--closed .main-nav__toggle:hover::after {
-  opacity: 0.6;
-}
-
-.main-nav--closed .main-nav__toggle:active::after {
-  opacity: 0.3;
-}
-
 .main-nav--opened .main-nav__toggle {
   background-color: @blue;
 
-  &::before,
-  &::after {
+  &::before {
     content: "";
     position: absolute;
+    top: 17;
+    right: 27;
     z-index: 5;
-    top: 9px;
-    right: -1px;
-    width: 24px;
-    height: 4px;
-    background-color: @white;
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/nav/opened.svg");
+    background-repeat: no-repeat;
 
-    &:hover::before,
-    &:hover::after {
+    &:hover::before {
       opacity: 0.6;
     }
 
-    &:focus::before,
-    &:focus::after {
+    &:focus::before {
       opacity: 0.3;
     }
   }
-
-  &::before {
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-}
-
-.main-nav--opened .main-nav__toggle:hover::after {
-  opacity: 0.6;
-}
-
-.main-nav--opened .main-nav__toggle:hover::before {
-  opacity: 0.6;
-}
-
-.main-nav--opened .main-nav__toggle:active::after {
-  opacity: 0.3;
-}
-
-.main-nav--opened .main-nav__toggle:active::before {
-  opacity: 0.3;
 }
 
 .main-nav--opened .main-nav__list,
@@ -179,7 +143,3 @@
     display: none;
   }
 }
-
-/*.main-nav--nojs .main-nav__toggle {
-  display: none;
-} */

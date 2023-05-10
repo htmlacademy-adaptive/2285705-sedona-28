@@ -30,7 +30,6 @@
 }
 
 .photo-card__name {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
@@ -108,13 +107,13 @@
 }
 
 .photo-card__description--dark {
-  @media (max-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     background-color: @lightgray2;
   }
 }
 
 .photo-card__description--dark .photo-card__button {
-  @media (max-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     background-color: @lightgray2;
   }
 }
