@@ -12,15 +12,20 @@
         <a class="main-header__logo">
           <img class="main-header__logo-image" src="img/header/logo.svg" width="185" height="96" alt="Седона">
         </a>
-        <button class="main-header__toggle" type="button">
-          <span class="visually-hidden">
-            Открыть меню
-          </span>
-        </button>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+            <svg width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.9 0H0V4H22.9V0Z" fill="currentColor"/>
+              <path d="M22.9 9H0V13H22.9V9Z" fill="currentColor"/>
+              <path d="M22.9 18H0V22H22.9V18Z" fill="currentColor"/>
+              </svg>
+            <span class="visually-hidden">
+              Открыть меню
+            </span>
+          </button>
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link">
+            <li class="main-nav__item">
+              <a class="main-nav__link href="#">
                 Главная
               </a>
             </li>
@@ -30,7 +35,7 @@
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
+              <a class="main-nav__link main-nav__link--current">
                 Форма отзыва
               </a>
             </li>
@@ -45,12 +50,12 @@
       <main>
         <section class="intro intro--form">
           <div class="intro__container intro__container--inner">
-            <img class="intro__image" src="img/intro/inner.svg" width="229" height="39" alt="Седона">
+            <img class="intro__image intro__image--inner" src="img/intro/inner.svg" width="229" height="39" alt="Седона">
           </div>
           <div class="intro__description">
             <h1 class="intro__title">Оставьте свой отзыв</h1>
             <p class="intro__text">
-              Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+              Помогите нашим отелям стать лучше! Оставьте отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных вами достопримечательностях
             </p>
           </div>
         </section>
@@ -61,36 +66,42 @@
                 <li class="feedback-form__item">
                   <label class="feedback-form__label">
                     <span class="feedback-form__text">Имя*:</span>
-                    <input class="feedback-form__input" type="text" name="name" value="Пётр" required>
+                    <input class="feedback-form__input" placeholder="Фамилия" type="text" name="name" value="Пётр" required>
                   </label>
                 </li>
                 <li class="feedback-form__item">
                   <label class="feedback-form__label">
                     <span class="feedback-form__text">Фамилия*:</span>
-                    <input class="feedback-form__input" type="text" name="surname" value="Пустота" required>
+                    <input class="feedback-form__input" placeholder="Имя" type="text" name="surname" value="Пустота" required>
                   </label>
                 </li>
                 <li class="feedback-form__item">
                   <label class="feedback-form__label">
                     <span class="feedback-form__text">Отчество:</span>
-                    <input class="feedback-form__input" type="text" name="patronymic" value="Викторович" required>
+                    <input class="feedback-form__input" placeholder="Отчество" type="text" name="patronymic" value="Викторович" required>
                   </label>
                 </li>
               </ul>
           </fieldset>
           <fieldset class="feedback-form__group feedback-form__group--contacts">
-            <legend class="feedback-form__legend">Контактная информация:</legend>
+            <legend class="feedback-form__legend feedback-form__legend--contacts">Контактная информация:</legend>
               <ul class="feedback-form__list feedback-form__list--user">
                 <li class="feedback-form__item">
                   <label class="feedback-form__label">
-                    <span class="feedback-form__text">Контактный телефон*:</span>
+                    <span class="feedback-form__text feedback-form__text--contacts">Контактный телефон*:</span>
                     <input class="feedback-form__input feedback-form__input--contacts" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Введите телефон" required>
+                    <svg class="feedback-form__svg" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M3.6 7.8C5 10.6 7.4 12.9 10.2 14.4L12.4 12.2C12.7 11.9 13.1 11.8 13.4 12C14.5 12.4 15.7 12.6 17 12.6C17.6 12.6 18 13 18 13.6V17C18 17.6 17.6 18 17 18C7.6 18 0 10.4 0 1C0 0.4 0.4 0 1 0H4.5C5.1 0 5.5 0.4 5.5 1C5.5 2.2 5.7 3.4 6.1 4.6C6.2 4.9 6.1 5.3 5.9 5.6L3.6 7.8Z" fill="#010101"/>
+                    </svg>
                   </label>
                 </li>
                 <li class="feedback-form__item">
                   <label class="feedback-form__label">
-                    <span class="feedback-form__text">Электронная почта*:</span>
+                    <span class="feedback-form__text feedback-form__text--contacts">Электронная почта*:</span>
                     <input class="feedback-form__input feedback-form__input--email" type="email" name="mail" placeholder="Введите e-mail" required>
+                    <svg class="feedback-form__svg feedback-form__svg--mail" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z" fill="black"/>
+                    </svg>
                   </label>
                 </li>
               </ul>
@@ -99,58 +110,64 @@
             <legend class="feedback-form__legend">Ваше общее впечатление:</legend>
               <ul class="feedback-form__list feedback-form__list--impressions">
                 <li class="feedback-form__item">
-                  <label>
+                  <label class="feedback-form__label feedback-form__label--mark">
                     <span class="feedback-form__option">Скорее положительное</span>
-                    <input class="feedback-form__radio" type="radio" name="impression" value="positive" checked>
+                    <input class="feedback-form__radio visually-hidden" type="radio" name="impression" value="positive" checked>
+                    <span class="feedback-form__mark"></span>
                   </label>
                 </li>
                 <li class="feedback-form__item">
-                  <label>
+                  <label class="feedback-form__label feedback-form__label--mark">
                     <span class="feedback-form__option">Скорее отрицательное</span>
-                    <input class="feedback-form__radio" type="radio" name="impression" value="negative">
+                    <input class="feedback-form__radio visually-hidden" type="radio" name="impression" value="negative">
+                    <span class="feedback-form__mark"></span>
                   </label>
                 </li>
                 <li class="feedback-form__item">
-                  <label>
+                  <label class="feedback-form__label feedback-form__label--mark">
                     <span class="feedback-form__option">Затрудняюсь ответить</span>
-                    <input class="feedback-form__radio" type="radio" name="impression" value="difficult">
+                    <input class="feedback-form__radio visually-hidden" type="radio" name="impression" value="difficult">
+                    <span class="feedback-form__mark"></span>
                   </label>
                 </li>
               </ul>
           </fieldset>
           <fieldset class="feedback-form__group  feedback-form__group--attractions">
-            <legend class="feedback-form__legend">Посещенные достопримечательности:</legend>
+            <legend class="feedback-form__legend">Посещенные <br> достопримечательности:</legend>
               <ul class="feedback-form__list feedback-form__list--attractions">
                 <li class="feedback-form__item">
-                  <label>
-                    <span class="feedback-form__option">Мост Дьявола
-                    </span>
-                    <input class="feedback-form__checkbox" type="checkbox" name="devil" value="devil's bridge" checked>
+                  <label class="feedback-form__label feedback-form__label--control">
+                    <span class="feedback-form__option">Мост Дьявола</span>
+                    <input class="feedback-form__checkbox visually-hidden" type="checkbox" name="devil" value="devil" checked>
+                    <span class="feedback-form__mark"></span>
                   </label>
                 </li>
-                <li class="feedback-form__list">
-                  <label>
+                <li class="feedback-form__item">
+                  <label class="feedback-form__label feedback-form__label--control">
                     <span class="feedback-form__option">Гора-Колокол</span>
-                    <input class="feedback-form__checkbox" type="checkbox" name="bell" value="bell mountain" checked>
+                    <input class="feedback-form__checkbox visually-hidden" type="checkbox" name="bell" value="bell mountain" checked>
+                    <span class="feedback-form__mark"></span>
                   </label>
                 </li>
-                <li class="feedback-form__list">
-                  <label>
+                <li class="feedback-form__item">
+                  <label class="feedback-form__label feedback-form__label--control">
                     <span class="feedback-form__option">Слайд-парк</span>
-                    <input class="feedback-form__checkbox" type="checkbox" name="slide" value="slide park" checked>
+                    <input class="feedback-form__checkbox visually-hidden" type="checkbox" name="slide" value="slide park" checked>
+                    <span class="feedback-form__mark"></span>
                   </label>
                 </li>
-                <li class="feedback-form__list">
-                  <label>
+                <li class="feedback-form__item">
+                  <label class="feedback-form__label feedback-form__label--control">
                     <span class="feedback-form__option">Красные скалы</span>
-                    <input class="feedback-form__checkbox" type="checkbox" name="rocks" value="red rocks">
+                    <input class="feedback-form__checkbox visually-hidden" type="checkbox" name="rocks" value="red rocks">
+                    <span class="feedback-form__mark"></span>
                   </label>
                 </li>
               </ul>
           </fieldset>
           <fieldset class="feedback-form__group feedback-form__group--feedback">
             <legend class="feedback-form__legend">Опишите свои эмоции:</legend>
-              <textarea class="feedback-form__textarea" name="comment" id="comment-field" rows="5">Опишите подробно все свои восторги</textarea>
+              <textarea class="feedback-form__textarea" name="comment" id="comment-field" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="feedback-form__button button" type="submit">Отправить отзыв</button>
           <span class="feedback-form__required">* — обязательные поля</span>
@@ -187,28 +204,33 @@
           <div class="copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <b class="copyright__text">Разработано</b>
-              <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.65 0.449951H13.55L0.0500031 1.84995V26.55L13.55 34.5499L26.95 26.55V1.84995L13.65 0.449951ZM25.05 12.55L13.55 5.74995V5.64995H13.45L13.35 5.54995V5.64995L1.95 12.55V3.54995L13.45 2.34995L25.05 3.54995V12.55ZM13.45 7.24995L24.95 13.95L20.45 16.55L13.35 12.35V13.75L19.25 17.25L18.35 17.75L13.35 14.75V16.15L17.15 18.45L16.35 18.95L13.35 17.15V18.55L15.25 19.65L13.45 20.75L2.05 14.05L13.45 7.24995ZM1.95 15.55L13.35 22.35V23.35L5.45 18.65V20.05L13.45 24.85V25.95L5.45 21.25V22.65L13.45 27.45L21.55 22.55V17.35L24.95 15.35V25.35L13.45 32.25L1.95 25.45V15.55Z" fill="black"/>
+              <svg width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.65 0.449951H13.55L0.0500031 1.84995V26.55L13.55 34.5499L26.95 26.55V1.84995L13.65 0.449951ZM25.05 12.55L13.55 5.74995V5.64995H13.45L13.35 5.54995V5.64995L1.95 12.55V3.54995L13.45 2.34995L25.05 3.54995V12.55ZM13.45 7.24995L24.95 13.95L20.45 16.55L13.35 12.35V13.75L19.25 17.25L18.35 17.75L13.35 14.75V16.15L17.15 18.45L16.35 18.95L13.35 17.15V18.55L15.25 19.65L13.45 20.75L2.05 14.05L13.45 7.24995ZM1.95 15.55L13.35 22.35V23.35L5.45 18.65V20.05L13.45 24.85V25.95L5.45 21.25V22.65L13.45 27.45L21.55 22.55V17.35L24.95 15.35V25.35L13.45 32.25L1.95 25.45V15.55Z" fill="currentColor"/>
               </svg>
             </a>
         </div>
       </footer>
     </div>
     <div class="modal modal--close">
-      <div class="modal__content modal__content--description">
-        <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-        <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+      <div class="modal__wrapper">
+        <div class="modal__content modal__content--description">
+          <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+          <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+        <div class="modal__container">
+          <button class="modal__button button">Закрыть окно</button>
+        </div>
       </div>
-      <div class="modal__container">
-        <button class="modal__button button">Закрыть окно</button>
+      <div class="modal modal--close">
+        <div class="modal__wrapper modal__wrapper--error">
+          <section class="modal__content">
+            <h2 class="modal__title">Что-то пошло не так!</h2>
+            <p class="modal__text modal__text--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
+            <button class="modal__button modal__button--error button">ОК</button>
+          </section>
+        </div>
       </div>
     </div>
-    <div class="modal  modal--close modal--error">
-      <section class="modal__content">
-        <h2 class="modal__title">Что-то пошло не так!</h2>
-        <p class="modal__text modal__text--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
-        <button class="modal__button modal__button--error button">ОК</button>
-      </section>
-    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

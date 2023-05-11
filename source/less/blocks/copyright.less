@@ -2,12 +2,23 @@
   background-color: @white;
 }
 
-.copyright__text {
-  margin-right: 12px;
-  text-transform: uppercase;
-  color: @black;
-}
-
 .copyright__link {
+  min-width: 129px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 12px;
+  margin-bottom: 7px;
+  font-weight: 400;
+  text-transform: uppercase;
   text-decoration: none;
+  color: @black;
+
+  &:hover {
+    color: @blue;
+  }
+
+  &:active {
+    color: @lightbrown;
+  }
 }

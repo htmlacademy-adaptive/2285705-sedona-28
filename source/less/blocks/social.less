@@ -1,16 +1,52 @@
 .social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
   margin-bottom: 29px;
   list-style-type: none;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .social__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: @blue;
   width: 48px;
   height: 48px;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 6px;
+  }
+}
+
+.social__icon:active {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .social__link {
-  padding: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  color: @white;
+
+  &:hover {
+    background-color: @darkblue;
+  }
+
+  &:active {
+    background-color: @darkblue1;
+  }
+}
+
+.social__link--vkontakte {
+  padding-top: 17px;
+  padding-bottom: 17px;
 }

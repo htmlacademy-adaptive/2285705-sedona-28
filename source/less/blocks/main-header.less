@@ -1,18 +1,24 @@
 .main-header {
   position: relative;
   background-color: @white;
-  min-height: 56px;
+  max-height: 56px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 56px;
+  }
 }
 
 .main-header__logo {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  z-index: 3;
 
-.main-header__toggle {
   @media (min-width: @tablet-width) {
-    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
   }
 }
