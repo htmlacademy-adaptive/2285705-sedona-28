@@ -100,29 +100,34 @@
 }
 
 .advantages__title {
-  margin: 0 auto 23px;
+  margin: 0 auto 20px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
+    margin: 0 auto 16px;
     max-width: 150px;
     font-size: 21px;
     line-height: 26px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto 18px;
   }
 }
 
 .advantages__number {
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 34px;
+    margin-bottom: 30px;
   }
 }
 
@@ -168,6 +173,7 @@
 .advantages__container {
   @media (min-width: @tablet-width) {
     display: flex;
+    width: 100%;
     grid-column: 1/-1;
   }
 }
@@ -181,7 +187,12 @@
 }
 
 .advantages__image {
-  @media (min-width: @desktop-width) {
+  display: block;
+  object-fit: cover;
+
+  @media (min-width: @tablet-width) {
+    min-height: 256px;
+    height: 100%;
     grid-column: span 2;
   }
 }

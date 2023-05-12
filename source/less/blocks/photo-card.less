@@ -3,6 +3,10 @@
   padding-top: 24px;
   padding-bottom: 25px;
   background-color: @white;
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .photo-card::before {
@@ -98,7 +102,8 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    bottom: -5px;
+    bottom: 0;
+    left: 0;
     width: 100%;
     padding: 17px 25px 20px;
     background-color: @black;
@@ -107,13 +112,13 @@
 }
 
 .photo-card__description--dark {
-  @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) and (max-width: 1199px) {
     background-color: @lightgray2;
   }
 }
 
 .photo-card__description--dark .photo-card__button {
-  @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) and (max-width: 1199px) {
     background-color: @lightgray2;
   }
 }
@@ -131,5 +136,15 @@
   @media (min-width: @tablet-width) {
     justify-content: center;
     align-items: center;
+  }
+}
+
+.photo-card__image {
+  display: block;
+  object-fit: cover;
+
+  @media (min-width: @desktop-width) {
+    max-width: 1200px;
+    width: 100%;
   }
 }
