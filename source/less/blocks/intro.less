@@ -8,6 +8,31 @@
   background-color: @blue;
   background-image: url("../img/intro/back.jpg");
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro/back@2x.jpg");
+    background-size: 320px auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 518px;
+    background-image: url("../img/intro/back-tablet.jpg");
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro/back-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/intro/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro/back-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
 }
 
 .intro__container::after {
@@ -15,19 +40,39 @@
   position: absolute;
   bottom: -1px;
   z-index: 2;
-  width: 320px;
+  width: 100%;
   height: 57px;
-  background-image: url("../img/index/divider.svg");
+  background-image: url("../img/intro/divider.svg");
   background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
-    display: none;
+    background-image: url("../img/intro/divider-tablet.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/intro/divider-desktop.svg");
   }
 }
 
 .intro__container--inner {
   min-height: 158px;
-  background-size: cover;
+  background-position-y: -200px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 290px;
+    background-image: url("../img/intro/back-desktop.jpg");
+    background-position-y: -179px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro/back-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 301px;
+    background-position-y: -163px;
+  }
 }
 
 .intro__description {

@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <div class="page__container">
@@ -50,7 +54,11 @@
       <main>
         <section class="intro">
           <div class="intro__container">
-            <img class="intro__image" width="282" height="214" src="img/intro/intro.svg" alt="Welcome to the gordeous Sedona, because the Grand Canyon suсks!">
+            <picture>
+              <source>
+              <source media="(min-width: 768px)" srcset="img/intro/intro-tablet.svg" width="461" height="350">
+              <img class="intro__image" width="282" height="214" src="img/intro/intro.svg" alt="Welcome to the gordeous Sedona, because the Grand Canyon suсks!">
+            </picture>
             <h1 class="visually-hidden">Отдых в Седоне</h1>
           </div>
         </section>
@@ -68,7 +76,11 @@
                   <b class="advantages__number advantages__number--blue">&#8212; № 1 &#8212;</b>
                   <p class="advantages__text advantages__text--blue">Седона не&nbsp;аттракцион для туристов, там течет своя жизнь</p>
                 </div>
-                <img class="advantages__image" src="img/index/sedona.jpg"  width="320" height="260" alt="Изображение городка Седоны">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/index/sedona-desktop.jpg 1x , img/index/sedona-desktop@2x.jpg 2x" width="800" height="256" >
+                  <source media="(min-width: 768px)" srcset="img/index/sedona-tablet.jpg 1x , img/index/sedona-tablet@2x.jpg 2x"  width="512" height="256">
+                  <img class="advantages__image" src="img/index/sedona.jpg" srcset="img/index/sedona@2x.jpg 2x" width="320" height="260" alt="Изображение городка Седоны">
+                </picture>
               </div>
               <ul class="services">
                 <li class="services__item services__item--housing">
@@ -98,7 +110,11 @@
                 <b class="advantages__number advantages__number--blue">&#8212; № 2 &#8212;</b>
                 <p class="advantages__text advantages__text--blue">Да, по нему можно пройти! <br>Если вы осмелитесь, конечно</p>
               </div>
-              <img class="advantages__image" src="img/index/diablo.jpg"  width="320" height="260" alt="Изображение моста Дьявола">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/index/diablo-desktop.jpg 1x , img/index/diablo-desktop@2x.jpg 2x" width="800" height="256">
+                <source media="(min-width: 768px)" srcset="img/index/diablo-tablet.jpg 1x , img/index/diablo-tablet@2x.jpg 2x" width="512" height="256">
+                <img class="advantages__image" src="img/index/diablo.jpg" srcset="img/index/diablo@2x.jpg 2x"  width="320" height="260" alt="Изображение моста Дьявола">
+              </picture>
             </li>
             <li class="advantages__item advantages__item--gray">
               <div class="advantages__wrapper">

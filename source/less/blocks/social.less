@@ -26,8 +26,10 @@
   }
 }
 
-.social__icon:active {
-  fill: rgba(255, 255, 255, 0.3);
+.social__icon {
+  &:active {
+    fill: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .social__link {
@@ -44,9 +46,4 @@
   &:active {
     background-color: @darkblue1;
   }
-}
-
-.social__link--vkontakte {
-  padding-top: 17px;
-  padding-bottom: 17px;
 }
