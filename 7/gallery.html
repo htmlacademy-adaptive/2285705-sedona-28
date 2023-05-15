@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Фотогалерея</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <base href="https://htmlacademy-adaptive.github.io/2285705-sedona-28/7/">
+</head>
+  <body class="page__body">
+    <div class="page__container">
+      <header class="main-header">
+        <a class="main-header__logo">
+          <img class="main-header__logo-image" src="img/header/logo.svg" width="185" height="96" alt="Седона">
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">
+              Открыть меню
+            </span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current">
+                Фото и видео
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                HTML ACADEMY
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="intro intro--gallery">
+          <div class="intro__container intro__container--inner">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/intro/inner-desktop.svg" width="458" height="80">
+              <source media="(min-width:768px)" srcset="img/intro/inner-tablet.svg" width="457" height="77">
+              <img class="intro__image intro__image--inner" src="img/intro/inner.svg" width="229" height="39" alt="Sedona">
+            </picture>
+          </div>
+          <div class="intro__description">
+            <h1 class="intro__title">Фото и видео</h1>
+            <p class="intro__text">
+              Не&nbsp;можете решиться на&nbsp;путешествие из-за курса? Фотографии помогут вам забыть о&nbsp;политике и&nbsp;экономике.
+            </p>
+          </div>
+        </section>
+        <section class="photo-catalog">
+          <div class="photo-catalog__container">
+            <h3 class="visually-hidden">Каталог фотографий</h3>
+            <ul class="photo-catalog__list">
+              <li class="photo-catalog__item photo-catalog__item--big">
+                <div class="photo-card">
+                  <a class="photo-card__link" href="#">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/gallery/photo1-desktop.jpg 1x, img/gallery/photo1-desktop@2x.jpg 2x" width="1200" height="400">
+                      <source media="(min-width:768px)" srcset="img/gallery/photo1-tablet.jpg 1x, img/gallery/photo1-tablet@2x.jpg 2x"  width="648" height="400">
+                      <img class="photo-card__image" src="img/gallery/photo1.jpg" srcset="img/gallery/photo1@2x.jpg 2x" width="280" height="280" alt="Изображение пустой дороги на закате">
+                    </picture>
+                  </a>
+                  <div class="photo-card__description">
+                    <div class="photo-card__text">
+                      <span class="photo-card__name">Неродные просторы</span>
+                      <span class="photo-card__author">Автор фото: Борис</span>
+                    </div>
+                    <div class="photo-card__like">
+                      <button class="photo-card__button" type="button">
+                        <span class="visually-hidden">Палец вверх</span>
+                      </button>
+                      <span class="photo-card__result">1350</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="photo-catalog__item">
+                <div class="photo-card">
+                  <a class="photo-card__link" href="#">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/gallery/photo2-desktop.jpg 1x, img/gallery/photo2-desktop@2x.jpg 2x" width="400" height="267">
+                      <source media="(min-width:768px)" srcset="img/gallery/photo2-tablet.jpg 1x, img/gallery/photo2-tablet@2x.jpg 2x"  width="324" height="267">
+                      <img class="photo-card__image" src="img/gallery/photo2.jpg" srcset="img/gallery/photo2@2x.jpg 2x" width="280" height="280" alt="Какус, цветущий жёлтыми цветами">
+                    </picture>
+                  </a>
+                  <div class="photo-card__description">
+                    <div class="photo-card__text">
+                      <span class="photo-card__name">Местная растительность</span>
+                      <span class="photo-card__author">Автор фото: Сергей</span>
+                    </div>
+                    <div class="photo-card__like">
+                      <button class="photo-card__button" type="button">
+                        <span class="visually-hidden">Палец вверх</span>
+                      </button>
+                      <span class="photo-card__result">143</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="photo-catalog__item">
+                <div class="photo-card">
+                  <a class="photo-card__link" href="#">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/gallery/photo3-desktop.jpg 1x, img/gallery/photo3-desktop@2x.jpg 2x" width="400" height="267">
+                      <source media="(min-width:768px)" srcset="img/gallery/photo3-tablet.jpg 1x, img/gallery/photo3-tablet@2x.jpg 2x"  width="324" height="267">
+                      <img class="photo-card__image" src="img/gallery/photo3.jpg" srcset="img/gallery/photo3@2x.jpg 2x" width="280" height="280" alt="Догога, уходящая вверх, окруженная зеленым лесом">
+                    </picture>
+                  <div class="photo-card__description photo-card__description--dark">
+                    <div class="photo-card__text">
+                      <span class="photo-card__name">Дорога на север</span>
+                      <span class="photo-card__author">Автор фото: Петр</span>
+                    </div>
+                    <div class="photo-card__like">
+                      <button class="photo-card__button" type="button">
+                        <span class="visually-hidden">Палец вверх</span>
+                      </button>
+                      <span class="photo-card__result">96</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="photo-catalog__item">
+                <div class="photo-card">
+                  <a class="photo-card__link" href="#">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/gallery/photo4-desktop.jpg 1x, img/gallery/photo4-desktop@2x.jpg 2x" width="400" height="267">
+                      <source media="(min-width:768px)" srcset="img/gallery/photo4-tablet.jpg 1x, img/gallery/photo4-tablet@2x.jpg 2x"  width="324" height="267">
+                      <img class="photo-card__image" src="img/gallery/photo4.jpg" srcset="img/gallery/photo4@2x.jpg 2x" width="280" height="280" alt="Изображение Моста Дьявола">
+                    </picture>
+                  </a>
+                  <div class="photo-card__description">
+                    <div class="photo-card__text">
+                      <span class="photo-card__name">Мост Дьявола</span>
+                      <span class="photo-card__author">Автор фото: Антон</span>
+                    </div>
+                    <div class="photo-card__like">
+                      <button class="photo-card__button" type="button">
+                        <span class="visually-hidden">Палец вверх</span>
+                      </button>
+                      <span class="photo-card__result">254</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="video-presentation">
+          <div class="video-presentation__container">
+            <h3 class="visually-hidden">Видео о Седоне</h3>
+            <span class="video-presentation__slogan">Все еще сомневаетесь?</span>
+            <p class="video-presentation__description">
+              Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+            </p>
+          </div>
+          <a class="video-presentation__link">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/gallery/poster-desktop.jpg 1x, img/gallery/poster-desktop@2x.jpg 2x" width="800" height="500">
+              <source media="(min-width:768px)" srcset="img/gallery/poster-tablet.jpg 1x, img/gallery/poster-tablet@2x.jpg 2x"  width="648" height="500">
+              <img class="video-presentation__image" src="img/gallery/poster.jpg" srcset="img/gallery/poster@2x.jpg 2x"  width="280" height="177" alt="Превью к видео">
+            </picture>
+          </a>
+          <button class="video-presentation__button" type="button">
+            <span class="visually-hidden">Смотреть видео</span>
+          </button>
+        </section>
+      </main>
+      <footer class="main-footer">
+        <b class="main-footer__tag">#VISITSEDONA</b>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte">
+              <span class="visually-hidden">Мы в вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram">
+              <span class="visually-hidden">Мы в телеграме</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube">
+              <span class="visually-hidden">Мы на ютубе</span>
+            </a>
+          </li>
+        </ul>
+        <div class="copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            Разработано
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
