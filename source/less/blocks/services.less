@@ -82,12 +82,13 @@
 }
 
 .services__icon {
-  position: absolute;
-  top: 0;
-  left: 0;
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
   @media (min-width: @tablet-width) {
-    position: relative;
     width: 77px;
     height: 72px;
   }
