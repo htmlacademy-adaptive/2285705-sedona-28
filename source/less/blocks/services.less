@@ -15,8 +15,9 @@
 }
 
 .services__container {
+  position: relative;
   padding-top: 8px;
-  margin-left: 47px;
+  padding-left: 47px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -30,7 +31,7 @@
 
 .services__title {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 16px;
   font-size: 18px;
   font-weight: 700px;
   line-height: 26px;
@@ -39,6 +40,17 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 34px;
+    padding-top: 26px;
+  }
+}
+
+.services__title--souvenirs {
+  @media (min-width: @tablet-width) {
+    padding-top: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 26px;
   }
 }
 
@@ -53,13 +65,15 @@
 }
 
 .services__item {
-  background-repeat: no-repeat;
-  background-position: top left;
+  position: relative;
 
   @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-width: 256px;
     text-align: center;
-    background-position: top 25% center;
   }
 
   @media (min-width: @desktop-width) {
@@ -67,38 +81,76 @@
   }
 }
 
-.services__item--housing {
-  background-image: url("../img/services/housing.svg");
+.services__icon {
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
   @media (min-width: @tablet-width) {
-    padding: 158px 33px 60px;
+    width: 77px;
+    height: 72px;
+  }
+}
+
+.services__icon--housing {
+  @media (min-width: @desktop-width) {
+    width: 79px;
+    height: 72px;
+  }
+}
+
+.services__icon--food {
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 68px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 169px 50px 69px;
+    width: 73px;
+    height: 69px;
+  }
+}
+
+.services__icon--souvenirs {
+  @media (min-width: @tablet-width) {
+    width: 66px;
+    height: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 77px;
+    height: 75px;
+  }
+}
+
+.services__item--housing {
+  @media (min-width: @tablet-width) {
+    padding: 60px 33px 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 69px 50px 69px;
   }
 }
 
 .services__item--food {
-  background-image: url("../img/services/food.svg");
-
   @media (min-width: @tablet-width) {
-    padding: 156px 50px 61px;
+    padding: 62px 50px 61px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 166px 50px 71px;
+    padding: 72px 50px 71px;
   }
 }
 
 .services__item--souvenirs {
-  background-image: url("../img/services/souvenirs.svg");
-
   @media (min-width: @tablet-width) {
-    padding: 153px 33px 64px;
+    padding: 64px 33px 64px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 170px 50px 67px;
+    padding: 69px 50px 67px;
   }
 }

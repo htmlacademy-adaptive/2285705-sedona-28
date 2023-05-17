@@ -54,13 +54,24 @@
 }
 
 .photo-card__button {
+  position: relative;
   border: none;
   width: 23px;
   height: 21px;
   margin-right: 14px;
-  background-image: url("../img/gallery/like.svg");
-  background-repeat: no-repeat;
-  background-color: @white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 23px;
+    height: 21px;
+    mask-image: url("../img/icons/sprite.svg#like");
+    mask-repeat: no-repeat;
+    background-color: @lightgray;
+  }
 
   @media (min-width: @tablet-width) {
     background-color: @lightgray;
@@ -68,10 +79,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-image: url("../img/gallery/likelight.svg");
-    background-repeat: no-repeat;
     background-color: @black;
     opacity: 0.3;
+
+    &::after {
+      background-color: @white;
+    }
   }
 }
 
