@@ -42,7 +42,7 @@
 }
 
 .feedback-form__group--attractions::before {
-  top: -94px;
+  top: -97px;
 
   @media (min-width: @tablet-width) {
     top: -56px;
@@ -77,12 +77,19 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+  word-break: break-word;
   color: @black;
   background-color: @white;
   z-index: 10;
 
   @media (min-width: @tablet-width) {
     padding: 0 66px;
+  }
+}
+
+.feedback-form__legend--attractions {
+  @media (min-width: @tablet-width) {
+    max-width: 440px;
   }
 }
 
@@ -101,6 +108,7 @@
 .feedback-form__text {
   padding-left: 16px;
   text-transform: uppercase;
+  word-break: break-word;
   color: @darkgray;
 }
 
@@ -157,8 +165,7 @@
 }
 
 .feedback-form__button {
-  max-width: 260px;
-  padding: 16px 49px;
+  padding: 16px 47px;
 
   @media (min-width: @tablet-width) {
     max-width: 324px;
@@ -264,10 +271,6 @@
   position: absolute;
   top: 40px;
   right: 20px;
-}
-
-.feedback-form__svg--mail {
-  top: 45px;
 }
 
 //impressions

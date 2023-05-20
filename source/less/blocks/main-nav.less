@@ -17,12 +17,17 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
+    min-width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: @desktop-width;
   }
 }
 
 .main-nav__item {
-  padding-top: 17px;
-  padding-bottom: 12px;
+  padding: 18px 20px 17px;
 
   @media (max-width: @mobile-width-only) {
     background-color: @blue;
@@ -69,6 +74,8 @@
   color: @white;
 
   @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
     color: @black;
   }
 }

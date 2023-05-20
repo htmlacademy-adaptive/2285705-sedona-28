@@ -11,6 +11,7 @@ import htmlmin from 'gulp-htmlmin';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import terser from 'gulp-terser';
+import { stacksvg } from "gulp-stacksvg";
 
 // Styles
 
@@ -70,10 +71,19 @@ export const styles = () => {
 
 //SVG
 
-  const svg = () => {
-  return gulp.src('source/img/**/*.svg')
-  .pipe(svgo())
-  .pipe(gulp.dest('build/img'));
+ const svg = () => {
+ return gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
+.pipe(svgo())
+.pipe(gulp.dest('build/img'));
+ }
+
+ const sprite = () => {
+  return gulp.src('source/img/icons/*.svg')
+    .pipe(svgo())
+    .pipe(stacksvg({
+      output: 'sprite.svg'
+    }))
+    .pipe(gulp.dest('build/img/icons'));
 }
 
 // Copy
@@ -135,7 +145,8 @@ export const styles = () => {
     html,
     scripts,
     svg,
-    createWebp
+    createWebp,
+    sprite
   ),
 );
 
@@ -150,7 +161,8 @@ export const styles = () => {
     html,
     scripts,
     svg,
-    createWebp
+    createWebp,
+    sprite
   ),
   gulp.series (
     server,

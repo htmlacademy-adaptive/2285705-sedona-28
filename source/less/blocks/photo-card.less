@@ -59,11 +59,12 @@
   width: 23px;
   height: 21px;
   margin-right: 14px;
+  background-color: @white;
 
   &::after {
     content: "";
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     display: block;
     width: 23px;
@@ -83,7 +84,7 @@
     opacity: 0.3;
 
     &::after {
-      background-color: @white;
+      mask-image: url("../img/icons/sprite.svg#like-light");
     }
   }
 }
@@ -161,3 +162,4 @@
     width: 100%;
   }
 }
+

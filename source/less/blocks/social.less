@@ -1,7 +1,9 @@
 .social {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  max-width: 160px;
   margin: 0;
   margin-bottom: 29px;
   list-style-type: none;
@@ -9,6 +11,7 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
+    max-width: 320px;
   }
 }
 
@@ -34,6 +37,8 @@
   &::after {
     content: "";
     position: absolute;
+    top: 12px;
+    left: 12px;
     width: 24px;
     height: 24px;
     background-color: @white;
@@ -55,18 +60,12 @@
 
 .social__link--vkontakte::after {
   mask-image: url("../img/icons/sprite.svg#vkontakte");
-  top: 17px;
-  left: 12px;
 }
 
 .social__link--telegram::after {
   mask-image: url("../img/icons/sprite.svg#telegram");
-  top: 15px;
-  left: 13px;
 }
 
 .social__link--youtube::after {
   mask-image: url("../img/icons/sprite.svg#youtube");
-  top: 17px;
-  left: 14px;
 }
