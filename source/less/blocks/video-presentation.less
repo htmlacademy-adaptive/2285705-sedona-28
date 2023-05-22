@@ -1,5 +1,5 @@
 .video-presentation {
-  padding: 17px 26px 0 28px;
+  padding: 17px 20px 0;
   background-color: @white;
 
   @media (min-width: @tablet-width) {
@@ -13,7 +13,14 @@
 
 .video-presentation__image {
   display: block;
+  object-fit: cover;
   margin: 0 auto;
+  min-height: 177px;
+  height: 100%;
+
+  @media (min-width: @tablet-width) {
+    min-height: 500px;
+  }
 }
 
 .video-presentation__container {
@@ -28,7 +35,7 @@
 
 .video-presentation__slogan {
   display: block;
-  margin-bottom: 39px;
+  margin-bottom: 29px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -46,6 +53,7 @@
 
 .video-presentation__description {
   margin: 0 auto;
+  padding: 0 3px;
   text-transform: uppercase;
   color: @darkgray;
 
@@ -56,7 +64,14 @@
 
 .video-presentation__wrapper {
   position: relative;
-  padding-bottom: 85px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 85px;
+  }
 }
 
 .video-presentation__button {

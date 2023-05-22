@@ -71,8 +71,8 @@ export const styles = () => {
 
 //SVG
 
- const svg = () => {
- return gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
+  const svg = () => {
+  return gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
  }
