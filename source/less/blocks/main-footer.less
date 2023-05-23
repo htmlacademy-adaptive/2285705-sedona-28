@@ -1,14 +1,12 @@
 .main-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 31px 82px;
+  padding: 58px 82px;
   background-color: @white;
 
   @media (min-width: @tablet-width) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
     padding: 37px 60px;
   }
@@ -19,11 +17,13 @@
 }
 
 .main-footer__tag {
+  display: block;
   margin-bottom: 31px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
   color: @black;
 
   @media (min-width: @tablet-width) {
