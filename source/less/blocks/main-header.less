@@ -4,21 +4,22 @@
   min-height: 56px;
 
   @media (max-width: @mobile-width-only) {
-    max-height: 56px;
+    min-height: 56px;
+  }
+}
+
+//при отключенном js
+
+.main-header__logo--nojs {
+  @media (max-width: @mobile-width-only) {
+    position: static;
   }
 }
 
 .main-header__logo {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-self: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
   z-index: 3;
-
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0;
-  }
 }
