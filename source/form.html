@@ -11,9 +11,9 @@
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
-    <div class="page__container">
+    <div class="page__container page__container--form">
       <header class="main-header">
-        <a class="main-header__logo">
+        <a class="main-header__logo" href="index.html">
           <img class="main-header__logo-image" src="img/header/logo.svg" width="185" height="96" alt="Седона">
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -24,12 +24,12 @@
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
+              <a class="main-nav__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
+              <a class="main-nav__link" href="gallery.html">
                 Фото и видео
               </a>
             </li>
@@ -47,7 +47,7 @@
         </nav>
       </header>
       <main>
-        <section class="intro intro--form">
+        <section class="intro">
           <div class="intro__container intro__container--inner">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/intro/inner-desktop.svg" width="458" height="80">
@@ -55,16 +55,16 @@
               <img class="intro__image intro__image--inner" src="img/intro/inner.svg" width="229" height="39" alt="Sedona">
             </picture>
           </div>
-          <div class="intro__description">
-            <h1 class="intro__title">Оставьте свой отзыв</h1>
+          <div class="intro__description intro__description--form">
+            <h1 class="intro__title intro__title--form">Оставьте свой отзыв</h1>
             <p class="intro__text">
-              Помогите нашим отелям стать лучше! Оставьте отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных вами достопримечательностях
+              Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
             </p>
           </div>
         </section>
         <form class="feedback-form" action="https://echo.htmlacademy.ru/courses" method="post">
           <fieldset class="feedback-form__group feedback-form__group--name">
-            <legend class="feedback-form__legend">Представьтесь:</legend>
+            <legend class="feedback-form__legend feedback-form__legend--user">Представьтесь:</legend>
               <ul class="feedback-form__list feedback-form__list--user">
                 <li class="feedback-form__item">
                   <label class="feedback-form__label">
@@ -110,7 +110,7 @@
               </ul>
           </fieldset>
           <fieldset class="feedback-form__group feedback-form__group--impressions">
-            <legend class="feedback-form__legend">Ваше общее впечатление:</legend>
+            <legend class="feedback-form__legend feedback-form__legend--impressions">Ваше общее впечатление:</legend>
               <ul class="feedback-form__list feedback-form__list--impressions">
                 <li class="feedback-form__item">
                   <label class="feedback-form__label feedback-form__label--mark">
@@ -136,32 +136,32 @@
               </ul>
           </fieldset>
           <fieldset class="feedback-form__group  feedback-form__group--attractions">
-            <legend class="feedback-form__legend">Посещенные <br> достопримечательности:</legend>
+            <legend class="feedback-form__legend feedback-form__legend--attractions">Посещенные достопримечательности:</legend>
               <ul class="feedback-form__list feedback-form__list--attractions">
                 <li class="feedback-form__item">
                   <label class="feedback-form__label feedback-form__label--control">
-                    <span class="feedback-form__option">Мост Дьявола</span>
+                    <span class="feedback-form__option feedback-form__option--attractions">Мост Дьявола</span>
                     <input class="feedback-form__checkbox visually-hidden" type="checkbox" name="devil" value="devil" checked>
                     <span class="feedback-form__mark"></span>
                   </label>
                 </li>
                 <li class="feedback-form__item">
                   <label class="feedback-form__label feedback-form__label--control">
-                    <span class="feedback-form__option">Гора-Колокол</span>
+                    <span class="feedback-form__option feedback-form__option--attractions">Гора-Колокол</span>
                     <input class="feedback-form__checkbox visually-hidden" type="checkbox" name="bell" value="bell mountain" checked>
                     <span class="feedback-form__mark"></span>
                   </label>
                 </li>
                 <li class="feedback-form__item">
                   <label class="feedback-form__label feedback-form__label--control">
-                    <span class="feedback-form__option">Слайд-парк</span>
+                    <span class="feedback-form__option feedback-form__option--attractions">Слайд-парк</span>
                     <input class="feedback-form__checkbox visually-hidden" type="checkbox" name="slide" value="slide park" checked>
                     <span class="feedback-form__mark"></span>
                   </label>
                 </li>
                 <li class="feedback-form__item">
                   <label class="feedback-form__label feedback-form__label--control">
-                    <span class="feedback-form__option">Красные скалы</span>
+                    <span class="feedback-form__option feedback-form__option--attractions">Красные скалы</span>
                     <input class="feedback-form__checkbox visually-hidden" type="checkbox" name="rocks" value="red rocks">
                     <span class="feedback-form__mark"></span>
                   </label>
@@ -169,7 +169,7 @@
               </ul>
           </fieldset>
           <fieldset class="feedback-form__group feedback-form__group--feedback">
-            <legend class="feedback-form__legend">Опишите свои эмоции:</legend>
+            <legend class="feedback-form__legend feedback-form__legend--feedback">Опишите свои эмоции:</legend>
               <textarea class="feedback-form__textarea" name="comment" id="comment-field" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="feedback-form__button button" type="submit">Отправить отзыв</button>

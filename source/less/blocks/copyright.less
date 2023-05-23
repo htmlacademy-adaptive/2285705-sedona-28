@@ -4,6 +4,8 @@
 
 .copyright__link {
   position: relative;
+  display: flex;
+  justify-content: center;
   min-width: 129px;
   padding-right: 40px;
   margin-bottom: 7px;
@@ -15,13 +17,17 @@
   &::after {
     content: "";
     position: absolute;
-    right: 0;
-    top: -7px;
+    right: 14px;
+    top: -8px;
     mask-image: url("../img/icons/sprite.svg#footer-logo");
     mask-repeat: no-repeat;
     width: 27px;
     height: 35px;
     background-color: @black;
+
+    @media (min-width: @tablet-width) {
+      right: 0;
+    }
   }
 
   &:hover {

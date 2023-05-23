@@ -3,23 +3,24 @@
 }
 
 .advantages__description {
-  padding: 32px 18px 16px 18px;
   text-align: center;
+  padding: 34px 30px 16px;
 
   @media (min-width: @tablet-width) {
-    padding: 47px 124px 55px;
+    margin: 0 auto;
+    padding: 48px 0 55px;
+    max-width: 520px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 58px 359px 55px 357px;
+    padding: 59px 0 44px;
   }
 }
 
 .advantages__slogan {
   position: relative;
   margin: 0;
-  margin-bottom: 35px;
-  padding: 0 10px;
+  margin-bottom: 36px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -30,15 +31,20 @@
   @media (min-width: @tablet-width) {
     padding: 0;
     font-size: 21px;
+    margin-bottom: 32px;
   }
 }
 
-.advantages__slogan::after {
+.advantages__container--advantages__container--first {
+  position: relative;
+}
+
+.advantages__container--advantages__container--first::after {
   @media (max-width: @mobile-width-only) {
     content: "";
     position: absolute;
-    bottom: -120px;
-    left: -18px;
+    top: 0;
+    left: 0;
     z-index: 2;
     width: 320px;
     height: 37px;
@@ -77,7 +83,7 @@
 }
 
 .advantages__wrapper {
-  padding: 24px 35px;
+  padding: 25px 35px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
@@ -92,15 +98,12 @@
 .advantages__text {
   margin: 0;
   text-transform: uppercase;
+  text-align: center;
   color: @darkgray;
-
-  @media (min-width: @desktop-width) {
-    padding: 0 10px;
-  }
 }
 
 .advantages__title {
-  margin: 0 auto 20px;
+  margin: 0 auto 11px;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -114,20 +117,20 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 auto 18px;
+    margin: 0 auto 15px;
   }
 }
 
 .advantages__number {
   display: block;
-  margin-bottom: 26px;
+  margin-bottom: 16px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -149,8 +152,17 @@
 }
 
 .advantages__text--blue {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 270px;
   color: @white;
+}
+
+.advantages__text--bridge {
+  max-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 230px;
+  }
 }
 
 .advantages__list {

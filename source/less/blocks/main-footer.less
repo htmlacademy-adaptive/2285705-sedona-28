@@ -1,28 +1,29 @@
 .main-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 33px 82px;
+  padding: 58px 82px;
   background-color: @white;
 
   @media (min-width: @tablet-width) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 36px 60px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 37px 60px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 36px 120px;
+    padding: 38px 120px;
   }
 }
 
 .main-footer__tag {
+  display: block;
   margin-bottom: 31px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
   color: @black;
 
   @media (min-width: @tablet-width) {

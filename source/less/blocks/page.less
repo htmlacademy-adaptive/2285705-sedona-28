@@ -6,6 +6,7 @@
   flex-grow: 1;
   width: 320px;
   margin: 0 auto;
+  background-color: @white;
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
@@ -13,12 +14,11 @@
 
   @media (min-width: @desktop-width) {
     width: @desktop-width;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   }
 }
 
 .page__body {
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
