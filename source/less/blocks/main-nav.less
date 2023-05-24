@@ -9,18 +9,23 @@
 //при отключенном js
 
 .main-nav--nojs {
-  .main-nav__toggle {
-    display: none;
+  .main-nav__toggle::after {
+    content: none;
   }
 
   .main-nav__list {
     @media (max-width: @mobile-width-only) {
-      position: static;
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 10;
     }
   }
 }
 
 .main-nav__list {
+  display: none;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -39,7 +44,7 @@
 }
 
 .main-nav__item {
-  padding: 18px 20px 17px;
+  padding: 16px 20px;
 
   @media (max-width: @mobile-width-only) {
     background-color: @blue;
@@ -159,17 +164,18 @@
   }
 }
 
-.main-nav--opened .main-nav__list {
-  @media (max-width: @mobile-width-only) {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 4;
-  }
-}
-
 .main-nav--closed .main-nav__list {
   @media (max-width: @mobile-width-only) {
     display: none;
+  }
+}
+
+.main-nav--opened .main-nav__list {
+  @media (max-width: @mobile-width-only) {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
   }
 }

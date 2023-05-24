@@ -1,25 +1,26 @@
 .main-header {
   position: relative;
   background-color: @white;
-  min-height: 56px;
+  max-height: 56px;
 
   @media (max-width: @mobile-width-only) {
-    min-height: 56px;
-  }
-}
-
-//при отключенном js
-
-.main-header__logo--nojs {
-  @media (max-width: @mobile-width-only) {
-    position: static;
+    max-height: 56px;
   }
 }
 
 .main-header__logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0;
-  z-index: 3;
+  @media (max-width: @mobile-width-only) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: 3;
+  }
 }
