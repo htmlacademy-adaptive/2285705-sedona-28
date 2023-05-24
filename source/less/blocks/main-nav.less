@@ -6,6 +6,20 @@
   }
 }
 
+//при отключенном js
+
+.main-nav--nojs {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    @media (max-width: @mobile-width-only) {
+      position: static;
+    }
+  }
+}
+
 .main-nav__list {
   list-style-type: none;
   padding: 0;
@@ -145,8 +159,7 @@
   }
 }
 
-.main-nav--opened .main-nav__list,
-.main-nav--nojs .main-nav__list {
+.main-nav--opened .main-nav__list {
   @media (max-width: @mobile-width-only) {
     position: absolute;
     top: 0;
