@@ -77,17 +77,17 @@
   }
 
   @media (min-width: @tablet-width) {
-    top: 6px;
+    top: 9px;
     background-color: @lightgray;
     margin-right: 9px;
   }
 
   @media (min-width: @desktop-width) {
-    background-color: @black;
-    opacity: 0.3;
+    background-color: transparent;
 
     &::after {
       mask-image: url("../img/icons/sprite.svg#like-light");
+      background-color: @white;
     }
   }
 }
@@ -106,6 +106,7 @@
 
   @media (min-width: @desktop-width) {
     color: @white;
+    margin-top: 10px;
   }
 }
 
@@ -129,8 +130,7 @@
     left: 0;
     width: 100%;
     padding: 0;
-    background-color: @black;
-    opacity: 0.6;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -152,7 +152,12 @@
   display: flex;
   flex-direction: column;
 
+  @media (min-width: @tablet-width) {
+    margin-top: 14px;
+  }
+
   @media (min-width: @desktop-width) {
+    justify-content: space-between;
     padding: 17px 25px;
     margin: 0;
   }
@@ -160,7 +165,7 @@
 
 .photo-card__text--big {
   @media (min-width: @desktop-width) {
-    padding: 22px 15px;
+    padding: 22px;
   }
 }
 
@@ -173,7 +178,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 28px 20px 27px;
+    padding: 21px 20px 27px;
   }
 }
 
