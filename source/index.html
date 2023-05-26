@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона</title>
+    <link rel="preload" href="/css/style.min.css" as="style" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/ptsans.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/ptsansbold.woff" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
@@ -116,6 +121,8 @@
                 <p class="advantages__text advantages__text--blue advantages__text--bridge">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/index/diablo-desktop.webp 1x, img/index/diablo-desktop@2x.webp 2x" width="800" height="256">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/index/diablo-tablet.webp 1x, img/index/diablo-tablet@2x.webp 2x" width="512" height="256">
                 <source media="(min-width: 1200px)" srcset="img/index/diablo-desktop.jpg 1x , img/index/diablo-desktop@2x.jpg 2x" width="800" height="256">
                 <source media="(min-width: 768px)" srcset="img/index/diablo-tablet.jpg 1x , img/index/diablo-tablet@2x.jpg 2x" width="512" height="256">
                 <img class="advantages__image" src="img/index/diablo.jpg" srcset="img/index/diablo@2x.jpg 2x"  width="320" height="260" alt="Изображение моста Дьявола">

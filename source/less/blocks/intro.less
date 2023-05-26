@@ -56,22 +56,32 @@
 
 .intro__container--inner {
   min-height: 158px;
-  background-position-y: -200px;
+  background-size: cover;
+  background-image: url("../img/intro/inner.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro/inner@2x.jpg");
+    background-size: 320px auto;
+  }
 
   @media (min-width: @tablet-width) {
     min-height: 290px;
-    background-image: url("../img/intro/back-desktop.jpg");
-    background-position-y: -179px;
+    background-image: url("../img/intro/inner-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/intro/back-desktop@2x.jpg");
-      background-size: 1200px auto;
+      background-image: url("../img/intro/inner-tablet@2x.jpg");
+      background-size: 768px auto;
     }
   }
 
   @media (min-width: @desktop-width) {
     min-height: 301px;
-    background-position-y: -163px;
+    background-image: url("../img/intro/inner-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro/inner-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 }
 
@@ -97,11 +107,11 @@
   padding: 37px 20px 38px;
 
   @media (min-width: @tablet-width) {
-    padding: 66px 15px 80px;
+    padding: 66px 15px 79px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 100px 20px 85px;
+    padding: 98px 0 89px;
   }
 }
 
@@ -136,7 +146,7 @@
   margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 32px;
+    margin-bottom: 31px;
   }
 }
 

@@ -371,6 +371,13 @@
   margin-bottom: 35px;
 }
 
+.feedback-form__list--impressions .feedback-form__item:not(:last-child) {
+  @media (min-width: @desktop-width) {
+    justify-content: start;
+    margin-right: 30px;
+  }
+}
+
 .feedback-form__label--mark {
   position: relative;
 }
@@ -448,6 +455,12 @@
   margin-bottom: 35px;
 }
 
+.feedback-form__list--attractions .feedback-form__item:not(:last-child) {
+  @media (min-width: @desktop-width) {
+    margin-right: 32px;
+  }
+}
+
 .feedback-form__checkbox + .feedback-form__mark:active::before {
   content: "";
   width: 22px;
@@ -487,7 +500,8 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    flex-wrap: wrap;
     padding: 17px 44px;
   }
 }
